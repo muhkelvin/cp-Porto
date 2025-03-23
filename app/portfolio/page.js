@@ -12,7 +12,7 @@ const projects = [
         category: "Custom Website",
         description: "Website perusahaan dengan fitur lengkap untuk showcase produk dan layanan",
         tech: ["Next.js", "Tailwind CSS",],
-        image: "https://picsum.photos/600/400?random=11",
+        image: "https://images.unsplash.com/photo-1626178793926-22b28830aa30?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         challenge: "Membuat sistem update konten yang mudah untuk tim marketing",
         solution: "Implementasi Produk Dan Service Property",
         links: {
@@ -25,7 +25,7 @@ const projects = [
         category: "Company Profile",
         description: "Company Profile For Insurance",
         tech: ["React", "GSAP", "Framer Motion"],
-        image: "https://picsum.photos/600/400?random=12",
+        image: "https://plus.unsplash.com/premium_photo-1661329820722-3a38e945083b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         challenge: "Optimasi kecepatan loading dengan banyak animasi",
         solution: "Lazy loading + optimasi bundle JavaScript",
         links: {
@@ -50,7 +50,7 @@ const projects = [
         category: "Company Profile",
         description: "Potograpy website",
         tech: ["Vue.js", "Firebase", "Node.js"],
-        image: "https://picsum.photos/600/400?random=14",
+        image: "https://plus.unsplash.com/premium_photo-1682097066897-209d0d9e9ae5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         challenge: "Menyediakan fitur real-time dan skalabilitas tinggi",
         solution: "Mengintegrasikan Firebase real-time database dan Node.js backend",
         links: {
@@ -59,11 +59,11 @@ const projects = [
         }
     },
     {
-        title: "LUXAUTO Company Profile",
+        title: "LUXAUTO Automative Company Profile",
         category: "Company Profile",
         description: "Website Automative",
         tech: ["WordPress", "PHP", "MySQL"],
-        image: "https://picsum.photos/600/400?random=15",
+        image: "https://images.unsplash.com/photo-1567789884554-0b844b597180?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         challenge: "Menyeimbangkan kecepatan dan kemudahan manajemen konten",
         solution: "Kustomisasi tema dan plugin untuk performa optimal",
         links: {
@@ -89,11 +89,25 @@ const projects = [
         category: "Company Profile",
         description: "Company Profile For Law",
         tech: ["HTML", "CSS", "JavaScript"],
-        image: "https://picsum.photos/600/400?random=16",
+        image: "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         challenge: "Menciptakan kesan pertama yang kuat",
         solution: "Menggunakan desain responsif dan animasi subtle",
         links: {
             demo: "https://cp-law.vercel.app/",
+            github: "#"
+        }
+    },
+
+    {
+        title: "Website Company Wedding Organizer",
+        category: "Company Profile",
+        description: "Company Profile For Law",
+        tech: ["HTML", "CSS", "JavaScript"],
+        image: "https://plus.unsplash.com/premium_photo-1690148812608-9942834931a1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        challenge: "Menciptakan kesan pertama yang kuat",
+        solution: "Menggunakan desain responsif dan animasi subtle",
+        links: {
+            demo: "https://cp-wedding.vercel.app/",
             github: "#"
         }
     },
