@@ -1,83 +1,70 @@
-import { FiGithub, FiLinkedin, FiInstagram, FiMapPin } from 'react-icons/fi'
+import Link from 'next/link'
+import {
+    Facebook,
+    Twitter,
+    Instagram,
+    Linkedin,
+    MessageCircle
+} from 'lucide-react'
+import { FaWhatsapp } from 'react-icons/fa'
+
 
 export default function Footer() {
+    const socialLinks = [
+        { icon: Facebook, url: "https://facebook.com/muhammadkelvin" },
+        { icon: Twitter, url: "https://twitter.com/muhammadkelvin" },
+        { icon: Instagram, url: "https://instagram.com/muhammadkelvin" },
+        { icon: Linkedin, url: "https://linkedin.com/in/muhammadkelvin" }
+    ]
+
+    const waLink = "https://wa.me/083150835308" // Ganti dengan nomor WhatsApp Anda
+
     return (
-        <footer className="bg-[#F5F3F0] mt-20">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {/* Column 1 */}
-                    <div>
-                        <h3 className="text-lg font-serif text-[#6D6875] mb-4">DevPort</h3>
-                        <p className="text-sm text-[#6D6875]/80">
-                            Crafting digital experiences with modern elegance.
-                        </p>
+        <footer className="bg-[#2C3E50] text-white py-10">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+                    {/* Footer Brand */}
+                    <div className="text-center md:text-left">
+                        <h2 className="text-2xl font-bold mb-2">Muhammad Kelvin</h2>
+                        <p className="text-[#BDC3C7]">Web Developer & Digital Creative</p>
                     </div>
 
-                    {/* Column 2 */}
-                    <div>
-                        <h4 className="text-[#6D6875] mb-4">Quick Links</h4>
-                        <ul className="space-y-2">
-                            <li>
-                                <a href="/portfolio" className="text-[#6D6875]/80 hover:text-[#B89F7B] transition-colors">
-                                    Portfolio
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/services" className="text-[#6D6875]/80 hover:text-[#B89F7B] transition-colors">
-                                    Services
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/contact" className="text-[#6D6875]/80 hover:text-[#B89F7B] transition-colors">
-                                    Contact
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    {/* Column 3 */}
-                    <div>
-                        <h4 className="text-[#6D6875] mb-4">Connect</h4>
-                        <div className="flex flex-col space-y-2">
-                            <a
-                                href="https://github.com/muhkelvin"
-                                className="text-[#6D6875]/80 hover:text-[#B89F7B] transition-colors flex items-center gap-2"
-                            >
-                                <FiGithub className="w-5 h-5" />
-                                GitHub
-                            </a>
-                            <a
-                                href="https://www.linkedin.com/in/muhkelvin/"
-                                className="text-[#6D6875]/80 hover:text-[#B89F7B] transition-colors flex items-center gap-2"
-                            >
-                                <FiLinkedin className="w-5 h-5" />
-                                LinkedIn
-                            </a>
-                            <a
-                                href="#"
-                                className="text-[#6D6875]/80 hover:text-[#B89F7B] transition-colors flex items-center gap-2"
-                            >
-                                <FiInstagram className="w-5 h-5" />
-                                Instagram
-                            </a>
-                            <a
-                                href="https://goo.gl/maps/example-jambi"
+                    {/* Social Links */}
+                    <div className="flex space-x-4">
+                        {socialLinks.map((social, index) => (
+                            <Link
+                                key={index}
+                                href={social.url}
                                 target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-[#6D6875]/80 hover:text-[#B89F7B] transition-colors flex items-center gap-2"
+                                className="text-[#BDC3C7] hover:text-white transition-colors"
                             >
-                                <FiMapPin className="w-5 h-5" />
-                                Lokasi Kami
-                            </a>
-                        </div>
+                                <social.icon size={24} />
+                            </Link>
+                        ))}
                     </div>
                 </div>
 
-                {/* Copyright */}
-                <div className="mt-8 pt-8 border-t border-[#E0E0E0] text-center text-sm text-[#6D6875]/80">
-                    © {new Date().getFullYear()} Muhammad Kelvin. All rights reserved.
+                {/* Copyright & WhatsApp Button */}
+                <div className="mt-8 pt-6 border-t border-[#34495E] flex justify-between items-center">
+                    <p className="text-sm text-[#BDC3C7]">
+                        &copy; {new Date().getFullYear()} Muhammad Kelvin. All Rights Reserved.
+                    </p>
                 </div>
             </div>
+            <Link
+                href={waLink}
+                target="_blank"
+                className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 hover:scale-110 transition-all z-50"
+            >
+                <FaWhatsapp size={28} />
+            </Link>
+            <Link
+                href={waLink}
+                target="_blank"
+                className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 hover:scale-110 transition-all z-50"
+            >
+                <MessageCircle size={28} className="text-white" />
+            </Link>
         </footer>
     )
 }

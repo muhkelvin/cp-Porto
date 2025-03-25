@@ -1,5 +1,5 @@
 // app/contact/page.jsx
-import {FiLinkedin, FiGithub, FiInstagram, FiMail, FiMessageSquare, FiMapPin} from 'react-icons/fi'
+import { FiLinkedin, FiGithub, FiInstagram, FiMail, FiMessageSquare, FiMapPin } from 'react-icons/fi'
 import Image from 'next/image'
 
 export default function Contact() {
@@ -20,7 +20,7 @@ export default function Contact() {
                                 <div>
                                     <p className="text-[#6D6875]/80">Email</p>
                                     <a
-                                        href="mailto:your.email@example.com"
+                                        href="mailto:muhkelvin36@gmail.com"
                                         className="text-[#6D6875] hover:text-[#B89F7B]"
                                     >
                                         muhkelvin36@gmail.com
@@ -104,41 +104,19 @@ export default function Contact() {
                         </div>
                     </div>
 
-
-                    {/* Contact Form */}
+                    {/* Google Form Embed */}
                     <div className="bg-white p-8 rounded-xl shadow-md">
-                        <form className="space-y-6">
-                            <div>
-                                <label className="block text-[#6D6875] mb-2">Nama Lengkap</label>
-                                <input
-                                    type="text"
-                                    className="w-full px-4 py-2 border border-[#E0E0E0] rounded-md focus:ring-2 focus:ring-[#B89F7B] focus:border-transparent"
-                                />
-                            </div>
-
-                            <div>
-                                <label className="block text-[#6D6875] mb-2">Alamat Email</label>
-                                <input
-                                    type="email"
-                                    className="w-full px-4 py-2 border border-[#E0E0E0] rounded-md focus:ring-2 focus:ring-[#B89F7B] focus:border-transparent"
-                                />
-                            </div>
-
-                            <div>
-                                <label className="block text-[#6D6875] mb-2">Pesan</label>
-                                <textarea
-                                    rows="5"
-                                    className="w-full px-4 py-2 border border-[#E0E0E0] rounded-md focus:ring-2 focus:ring-[#B89F7B] focus:border-transparent"
-                                ></textarea>
-                            </div>
-
-                            <button
-                                type="submit"
-                                className="w-full bg-[#B89F7B] text-white py-3 rounded-md hover:bg-[#A38F6D] transition"
-                            >
-                                Kirim Pesan
-                            </button>
-                        </form>
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSdAC4VzcijpOLnJ3flGTgIxjtqDh371gkDIwy8OXtvesDrT5A/viewform?usp=dialog"
+                            width="100%"
+                            height="800"
+                            frameBorder="0"
+                            marginHeight="0"
+                            marginWidth="0"
+                            title="Contact Form"
+                        >
+                            Memuat Form...
+                        </iframe>
                     </div>
                 </div>
             </section>

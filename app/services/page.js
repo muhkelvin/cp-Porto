@@ -47,28 +47,14 @@ const services = [
 const pricing = [
     {
         type: "Package",
-        price: "Mulai Rp5jt",
+        price: "Mulai Rp899K",
         features: [
             "✓ Company Profile Website",
-            "✓ 5 Halaman Template",
-            "✓ CMS Dasar",
-            "✓ Hosting 1 Tahun",
-            "✓ Garansi 3 Bulan"
+            "✓ 5 Halaman",
         ],
         cta: "Pilih Paket"
     },
-    {
-        type: "Hourly",
-        price: "Rp350rb/jam",
-        features: [
-            "✓ Konsultasi Teknis",
-            "✓ Debugging & Fix Issue",
-            "✓ Optimasi Performa",
-            "✓ Custom Module",
-            "✓ Flexible Time"
-        ],
-        cta: "Hubungi Sekarang"
-    },
+
     {
         type: "Custom Project",
         price: "Negosiasi",

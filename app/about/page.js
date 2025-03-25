@@ -16,8 +16,8 @@ export default function About() {
             <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                 <div className="flex flex-col lg:flex-row items-center gap-12">
                     {/* Image */}
-                    <div className="lg:w-1/2 relative">
-                        <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl">
+                    <div className="lg:w-1/2 w-full">
+                        <div className="relative w-full aspect-square rounded-2xl overflow-hidden shadow-xl">
                             <Image
                                 src="/2.jpg"
                                 alt="Profile"
@@ -34,10 +34,8 @@ export default function About() {
                         </h1>
 
                         <p className="text-lg text-[#6D6875]/80 leading-relaxed">
-                            Sebagai seorang Web Developer, saya memiliki
-                            passion dalam menciptakan solusi digital yang fungsional dan estetis.
-                            Saya memulai karir sebagai full-stack developer, dan kini fokus pada
-                            pengembangan aplikasi web modern dengan teknologi terkini.
+                            Sebagai seorang Web Developer, saya memiliki passion dalam menciptakan solusi digital yang fungsional dan estetis.
+                            Saya memulai karir sebagai full-stack developer, dan kini fokus pada pengembangan aplikasi web modern dengan teknologi terkini.
                         </p>
 
                         <p className="text-lg text-[#6D6875]/80 leading-relaxed">
@@ -55,7 +53,6 @@ export default function About() {
                         >
                             Download CV
                         </a>
-
                     </div>
                 </div>
             </section>
@@ -93,8 +90,7 @@ export default function About() {
                         Tertarik Berkolaborasi?
                     </h2>
                     <p className="text-[#6D6875]/90 mb-8 text-lg max-w-2xl mx-auto">
-                        Mari berbicara tentang bagaimana saya dapat membantu mewujudkan
-                        visi digital Anda menjadi kenyataan.
+                        Mari berbicara tentang bagaimana saya dapat membantu mewujudkan visi digital Anda menjadi kenyataan.
                     </p>
                     <a
                         href="https://wa.me/6289526323412?text=Saya%20ingin%20bertanya%20tentang%20pembuatan%20website%20%3F"
@@ -104,7 +100,6 @@ export default function About() {
                     >
                         Hubungi Sekarang !
                     </a>
-
                 </div>
             </section>
         </div>
