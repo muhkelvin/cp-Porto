@@ -23,7 +23,7 @@ export default function Nav() {
         { name: 'Kontak', path: '/contact', icon: MessageCircle },
         {
             name: 'Hubungi',
-            path: 'https://api.whatsapp.com/send/?phone=083150835308&text&type=phone_number&app_absent=0',
+            path: 'https://api.whatsapp.com/send/?phone=089526323412&text&type=phone_number&app_absent=0',
             icon: Phone,
             external: true
         }
