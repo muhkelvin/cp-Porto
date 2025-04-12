@@ -33,10 +33,10 @@ export default function Contact() {
                                 <div>
                                     <p className="text-[#6D6875]/80">WhatsApp</p>
                                     <a
-                                        href="https://wa.me/83150835308"
+                                        href="https://wa.me/89526323412"
                                         className="text-[#6D6875] hover:text-[#B89F7B]"
                                     >
-                                        +62 83150835308
+                                        +62 089526323412
                                     </a>
                                 </div>
                             </div>
