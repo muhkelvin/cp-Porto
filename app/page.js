@@ -50,14 +50,15 @@ export default function Home() {
             {/* Text Content */}
             <div className="lg:w-1/2 space-y-6">
               <h1 className="text-5xl md:text-6xl font-serif text-[#6D6875] leading-tight">
-                Web Developer<br />
-                <span className="text-[#B89F7B]">Membangun Pengalaman</span><br />
-                Digital yang Memukau
+                Bantu UMKM Go Digital<br />
+                <span className="text-[#B89F7B]">Lewat Website & Digital Management</span><br />
+                yang Efektif dan Terjangkau
               </h1>
 
               <p className="text-xl text-[#6D6875]/80">
-                Spesialis dalam pengembangan aplikasi web modern menggunakan React.js & Next.js,
-                dengan fokus pada performa optimal dan user experience yang memikat.
+                Bisago Digital hadir untuk mendampingi UMKM dalam proses digitalisasi,
+                mulai dari pembuatan website profesional hingga pengelolaan sosial media
+                agar bisnis makin dikenal dan berkembang di era online.
               </p>
 
               <div className="flex gap-4">
@@ -68,19 +69,22 @@ export default function Home() {
                   Lihat Projek
                 </Link>
                 <Link
-                    href="/contact"
+                    href="https://api.whatsapp.com/send/?phone=6289526323412&text=Halo,%20saya%20tertarik%20untuk%20konsultasi%20gratis.%20Bolehkah%20saya%20bertanya%20lebih%20lanjut?&type=phone_number&app_absent=0"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="border-2 border-[#6D6875] text-[#6D6875] px-8 py-3 rounded-md hover:bg-[#6D6875]/10 transition"
                 >
                   Hubungi Saya
                 </Link>
               </div>
+
             </div>
 
             {/* Image */}
             <div className="lg:w-1/2 relative">
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                    src="https://picsum.photos/600/600?random=4"
+                    src="/12.png"
                     alt="Profile"
                     fill
                     className="object-cover"

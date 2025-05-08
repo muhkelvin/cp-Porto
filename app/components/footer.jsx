@@ -15,7 +15,7 @@ export default function Footer() {
         { icon: Linkedin, url: "https://linkedin.com/in/muhammadkelvin" }
     ]
 
-    const waLink = "https://api.whatsapp.com/send/?phone=089526323412&text=Halo,%20saya%20tertarik%20untuk%20konsultasi%20gratis.%20Bolehkah%20saya%20bertanya%20lebih%20lanjut?&type=phone_number&app_absent=0" // Ganti dengan nomor WhatsApp Anda
+    const waLink = "https://api.whatsapp.com/send/?phone=6289526323412&text=Halo,%20saya%20tertarik%20untuk%20konsultasi%20gratis.%20Bolehkah%20saya%20bertanya%20lebih%20lanjut?&type=phone_number&app_absent=0" // Ganti dengan nomor WhatsApp Anda
 
     return (
         <footer className="bg-[#2C3E50] text-white py-10">

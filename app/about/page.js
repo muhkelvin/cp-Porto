@@ -7,7 +7,12 @@ const skills = [
     { name: 'Laravel', level: 88 },
     { name: 'Git', level: 92 },
     { name: 'SQL', level: 87 },
-]
+    { name: 'Content Strategy', level: 80 },
+    { name: 'Social Media Management', level: 83 },
+    { name: 'Meta Ads', level: 78 },
+    { name: 'Canva / Visual Design', level: 85 }
+];
+
 
 export default function About() {
     return (
@@ -19,7 +24,7 @@ export default function About() {
                     <div className="lg:w-1/2 w-full">
                         <div className="relative w-full aspect-square rounded-2xl overflow-hidden shadow-xl">
                             <Image
-                                src="/2.jpg"
+                                src="/Ghib.png"
                                 alt="Profile"
                                 fill
                                 className="object-cover"
@@ -34,25 +39,31 @@ export default function About() {
                         </h1>
 
                         <p className="text-lg text-[#6D6875]/80 leading-relaxed">
-                            Sebagai seorang Web Developer, saya memiliki passion dalam menciptakan solusi digital yang fungsional dan estetis.
-                            Saya memulai karir sebagai full-stack developer, dan kini fokus pada pengembangan aplikasi web modern dengan teknologi terkini.
+                            Saya adalah Web Developer dan Digital Manager yang berdedikasi untuk menghadirkan solusi online end-to-end—dari pembuatan website hingga pengelolaan kehadiran digital Anda. Berawal sebagai full-stack developer, kini saya juga mengelola strategi konten, media sosial, dan kampanye iklan untuk UMKM dengan teknologi dan metode terbaru.
+
+                            Nilai Utama yang Saya Bawa:
+
+                            🧹 Kode Bersih & Terstruktur
+
+                            🤝 Komunikasi Terbuka & Tepat Waktu
+
+                            🎯 Fokus pada User Experience & Engagement
+
+                            📈 Digital Management Terintegrasi
+
+                            Saya percaya kolaborasi adalah kunci: Anda ceritakan kebutuhan bisnis, saya wujudkan dan kelola agar Anda tumbuh secara digital.
                         </p>
 
                         <p className="text-lg text-[#6D6875]/80 leading-relaxed">
                             Nilai utama yang saya tawarkan: <br />
                             <span className="text-[#B89F7B]">✓</span> Kode Bersih & Terstruktur<br />
                             <span className="text-[#B89F7B]">✓</span> Fokus pada User Experience<br />
-                            <span className="text-[#B89F7B]">✓</span> Komunikasi Transparan
+                            <span className="text-[#B89F7B]">✓</span> Komunikasi Transparan<br />
+                            <span className="text-[#B89F7B]">✓</span> Strategi & Manajemen Digital Terintegrasi<br />
+                            <span className="text-[#B89F7B]">✓</span> Analitik & Optimasi Berkelanjutan
                         </p>
 
-                        <a
-                            href="https://drive.google.com/file/d/14GWGBkcnQifyYD0FK6JR-9cByxiOq5P1/view?usp=sharing"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-[#B89F7B] text-white px-8 py-3 rounded-md hover:bg-[#A38F6D] transition"
-                        >
-                            Download CV
-                        </a>
+
                     </div>
                 </div>
             </section>
@@ -93,7 +104,7 @@ export default function About() {
                         Mari berbicara tentang bagaimana saya dapat membantu mewujudkan visi digital Anda menjadi kenyataan.
                     </p>
                     <a
-                        href="https://wa.me/6289526323412?text=Saya%20ingin%20bertanya%20tentang%20pembuatan%20website%20%3F"
+                        href="https://api.whatsapp.com/send/?phone=6289526323412&text=Halo,%20saya%20tertarik%20untuk%20konsultasi%20gratis.%20Bolehkah%20saya%20bertanya%20lebih%20lanjut?&type=phone_number&app_absent=0"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-[#B89F7B] text-white px-8 py-3 rounded-md hover:bg-[#A38F6D] transition"
