@@ -33,10 +33,10 @@ export default function Contact() {
                                 <div>
                                     <p className="text-[#6D6875]/80">WhatsApp</p>
                                     <a
-                                        href="https://wa.me/6281234567890"
+                                        href="https://api.whatsapp.com/send/?phone=089526323412&text=Halo,%20saya%20tertarik%20untuk%20konsultasi%20gratis.%20Bolehkah%20saya%20bertanya%20lebih%20lanjut?&type=phone_number&app_absent=0"
                                         className="text-[#6D6875] hover:text-[#B89F7B]"
                                     >
-                                        +62 895263233412
+                                        +62 89526323412
                                     </a>
                                 </div>
                             </div>
@@ -92,7 +92,7 @@ export default function Contact() {
 
                                 {/* Tombol Buka Maps */}
                                 <a
-                                    href="https://goo.gl/maps/6z8z8z8z8z8z8z8z8"
+                                    href="https://docs.google.com/forms/d/e/1FAIpQLSdAC4VzcijpOLnJ3flGTgIxjtqDh371gkDIwy8OXtvesDrT5A/viewform?usp=sharing"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="mt-4 inline-flex items-center gap-2 bg-[#B89F7B] text-white px-6 py-2 rounded-md hover:bg-[#A38F6D] transition"
@@ -107,7 +107,7 @@ export default function Contact() {
                     {/* Google Form Embed */}
                     <div className="bg-white p-8 rounded-xl shadow-md">
                         <iframe
-                            src="https://docs.google.com/forms/d/e/1FAIpQLSdAC4VzcijpOLnJ3flGTgIxjtqDh371gkDIwy8OXtvesDrT5A/viewform?usp=dialog"
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSdAC4VzcijpOLnJ3flGTgIxjtqDh371gkDIwy8OXtvesDrT5A/viewform?usp=sharing"
                             width="100%"
                             height="800"
                             frameBorder="0"

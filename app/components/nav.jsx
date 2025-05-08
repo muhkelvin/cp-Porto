@@ -22,8 +22,8 @@ export default function Nav() {
         { name: 'Layanan', path: '/services', icon: ShoppingBag },
         { name: 'Kontak', path: '/contact', icon: MessageCircle },
         {
-            name: 'Hubungi',
-            path: 'https://api.whatsapp.com/send/?phone=083150835308&text&type=phone_number&app_absent=0',
+            name: 'Konsultasi Sekarang',
+            path: 'https://api.whatsapp.com/send/?phone=089526323412&text=Halo,%20saya%20tertarik%20untuk%20konsultasi%20gratis.%20Bolehkah%20saya%20bertanya%20lebih%20lanjut?&type=phone_number&app_absent=0',
             icon: Phone,
             external: true
         }
@@ -35,7 +35,7 @@ export default function Nav() {
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
                     <Link href="/" className="text-2xl font-bold text-[#2C3E50] hover:text-[#3498DB] transition-colors">
-                        Kelvin
+                        BisaGoDigital
                     </Link>
 
                     {/* Desktop Menu */}

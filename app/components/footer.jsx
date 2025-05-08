@@ -11,13 +11,11 @@ import { FaWhatsapp } from 'react-icons/fa'
 
 export default function Footer() {
     const socialLinks = [
-        { icon: Facebook, url: "https://facebook.com/muhammadkelvin" },
-        { icon: Twitter, url: "https://twitter.com/muhammadkelvin" },
-        { icon: Instagram, url: "https://instagram.com/muhammadkelvin" },
+        { icon: Instagram, url: "https://www.instagram.com/bisagodigital/" },
         { icon: Linkedin, url: "https://linkedin.com/in/muhammadkelvin" }
     ]
 
-    const waLink = "https://wa.me/083150835308" // Ganti dengan nomor WhatsApp Anda
+    const waLink = "https://api.whatsapp.com/send/?phone=089526323412&text=Halo,%20saya%20tertarik%20untuk%20konsultasi%20gratis.%20Bolehkah%20saya%20bertanya%20lebih%20lanjut?&type=phone_number&app_absent=0" // Ganti dengan nomor WhatsApp Anda
 
     return (
         <footer className="bg-[#2C3E50] text-white py-10">
@@ -25,8 +23,8 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
                     {/* Footer Brand */}
                     <div className="text-center md:text-left">
-                        <h2 className="text-2xl font-bold mb-2">Muhammad Kelvin</h2>
-                        <p className="text-[#BDC3C7]">Web Developer & Digital Creative</p>
+                        <h2 className="text-2xl font-bold mb-2">Bisa Go Digital</h2>
+                        <p className="text-[#BDC3C7]">Web Development & Digital Management</p>
                     </div>
 
                     {/* Social Links */}
@@ -47,7 +45,7 @@ export default function Footer() {
                 {/* Copyright & WhatsApp Button */}
                 <div className="mt-8 pt-6 border-t border-[#34495E] flex justify-between items-center">
                     <p className="text-sm text-[#BDC3C7]">
-                        &copy; {new Date().getFullYear()} Muhammad Kelvin. All Rights Reserved.
+                        &copy; {new Date().getFullYear()} Bisa Go Digital. All Rights Reserved.
                     </p>
                 </div>
             </div>

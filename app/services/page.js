@@ -46,15 +46,38 @@ const services = [
 
 const pricing = [
     {
-        type: "Package",
-        price: "Mulai Rp899K",
+        type: "UMKM Starter",
+        price: "Mulai RpxxxK (Nego)",
         features: [
             "✓ Company Profile Website",
             "✓ 5 Halaman",
+            "✓ Desain responsif (mobile & desktop)",
+            "✓ Hosting + SSL 1 tahun",
+            "✓ Form kontak & link WhatsApp",
         ],
-        cta: "Pilih Paket"
     },
-
+    {
+        type: "Go Digital",
+        price: "Mulai Rpx.xJT (Nego)",
+        features: [
+            "✓ Semua fitur Starter",
+            "✓ Basic Social Media Management (8 konten/bln)",
+            "✓ Copywriting & hashtag research",
+            "✓ Setup Iklan Dasar (Facebook & Instagram)*",
+        ],
+    },
+    {
+        type: "Digital Accelerator",
+        price: "Mulai Rpx.xJT (Nego)",
+        features: [
+            "✓ Semua fitur Go Digital",
+            "✓ Integrasi Pembayaran & Keranjang Belanja",
+            "✓ Unlimited Produk & Kategori",
+            "✓ Advanced Digital Management (12 grafis + 4 video/bln)",
+            "✓ Analitik & Laporan Bulanan (web & social media)",
+            "✓ Pembuatan & Optimasi Google Ads*",
+        ],
+    },
     {
         type: "Custom Project",
         price: "Negosiasi",
@@ -65,37 +88,38 @@ const pricing = [
             "✓ Prioritas Support",
             "✓ Dokumentasi Lengkap"
         ],
-        cta: "Request Quote"
     }
-]
+];
+
 
 const process = [
     {
         step: 1,
-        title: "Konsultasi",
-        desc: "Diskusi kebutuhan proyek dan tujuan bisnis"
+        title: "Konsultasi & Analisis",
+        desc: "Diskusi kebutuhan website & strategi digital untuk UMKM Anda"
     },
     {
         step: 2,
-        title: "Perencanaan",
-        desc: "Penyusunan wireframe & spesifikasi teknis"
+        title: "Perencanaan & Wireframe",
+        desc: "Penyusunan struktur halaman, wireframe, dan roadmap konten digital"
     },
     {
         step: 3,
-        title: "Development",
-        desc: "Implementasi kode & testing menyeluruh"
+        title: "Development & Integrasi",
+        desc: "Implementasi kode, setup hosting/SSL, dan integrasi fitur dasar"
     },
     {
         step: 4,
-        title: "Revisi",
-        desc: "Penyesuaian berdasarkan feedback"
+        title: "Digital Management Setup",
+        desc: "Konfigurasi akun media sosial, pembuatan konten awal, dan setup iklan dasar"
     },
     {
         step: 5,
-        title: "Launch",
-        desc: "Deployment & training penggunaan"
+        title: "Peluncuran & Monitoring",
+        desc: "Deployment website, training penggunaan, serta pemantauan & optimasi awal"
     }
-]
+];
+
 
 export default function Services() {
     return (
@@ -146,9 +170,6 @@ export default function Services() {
                                         <li key={i} className="text-[#6D6875]/80">{feature}</li>
                                     ))}
                                 </ul>
-                                <button className="w-full bg-[#B89F7B] text-white py-3 rounded-md hover:bg-[#A38F6D] transition">
-                                    {price.cta}
-                                </button>
                             </div>
                         ))}
                     </div>
