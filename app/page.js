@@ -1,199 +1,120 @@
-// app/page.jsx
 import Image from 'next/image'
 import Link from 'next/link'
 
-const projects = [
-  {
-    title: "E-Commerce Platform",
-    description: "Modern online shopping platform with React & Node.js",
-    tech: ["React", "Next.js", "Tailwind"],
-    link: "#",
-    image: "https://picsum.photos/600/400?random=1"
-  },
-  {
-    title: "SaaS Dashboard",
-    description: "Analytics dashboard for SaaS product",
-    tech: ["TypeScript", "Chart.js", "Firebase"],
-    link: "#",
-    image: "https://picsum.photos/600/400?random=2"
-  },
-  {
-    title: "Portfolio Website",
-    description: "Artist portfolio with CMS integration",
-    tech: ["WordPress", "PHP", "GSAP"],
-    link: "#",
-    image: "https://picsum.photos/600/400?random=3"
-  }
-]
-
-const testimonials = [
-  {
-    name: "John Doe",
-    role: "CEO Startup Tech",
-    text: "Hasil kerja yang luar biasa, komunikasi jelas dan tepat waktu.",
-    avatar: "https://i.pravatar.cc/100?img=1"
-  },
-  {
-    name: "Jane Smith",
-    role: "Creative Director",
-    text: "Mengubah visi kami menjadi website yang benar-benar hidup.",
-    avatar: "https://i.pravatar.cc/100?img=2"
-  }
-]
-
 export default function Home() {
   return (
-      <div className="min-h-screen">
+      <div className="min-h-screen bg-gradient-to-b from-[#FFF9F2] to-white">
         {/* Hero Section */}
-        <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
+        <section className="pt-28 pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          <div className="flex flex-col lg:flex-row items-center gap-16">
             {/* Text Content */}
-            <div className="lg:w-1/2 space-y-6">
-              <h1 className="text-5xl md:text-6xl font-serif text-[#6D6875] leading-tight">
-                Bantu UMKM Go Digital<br />
-                <span className="text-[#B89F7B]">Lewat Website & Digital Management</span><br />
-                yang Efektif dan Terjangkau
+            <div className="lg:w-1/2 space-y-8 relative z-10">
+              <h1 className="text-5xl md:text-6xl font-bold text-[#2D2A32] leading-tight">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#B89F7B] to-[#9B8574]">
+                Bantu UMKM Go Digital
+              </span>
+                <br />
+                <span className="text-4xl md:text-5xl font-medium text-[#4A453E]">
+                Lewat Solusi Digital yang
+                <span className="block mt-2">Efektif & Terjangkau</span>
+              </span>
               </h1>
 
-              <p className="text-xl text-[#6D6875]/80">
-                Bisago Digital hadir untuk mendampingi UMKM dalam proses digitalisasi,
-                mulai dari pembuatan website profesional hingga pengelolaan sosial media
-                agar bisnis makin dikenal dan berkembang di era online.
+              <p className="text-lg text-[#6D6875]/90 leading-relaxed">
+                Transformasi bisnis Anda dengan website profesional dan manajemen media sosial
+                yang dikelola oleh tim ahli kami. Mulai dari konsep hingga eksekusi - kami
+                yang urus!
               </p>
 
-              <div className="flex gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <Link
                     href="/portfolio"
-                    className="bg-[#B89F7B] text-white px-8 py-3 rounded-md hover:bg-[#A38F6D] transition"
+                    className="relative inline-flex items-center justify-center px-8 py-4 overflow-hidden font-medium text-[#FFF9F2] transition duration-300 ease-out rounded-full shadow-lg group"
+                    style={{background: 'linear-gradient(45deg, #B89F7B 0%, #9B8574 100%)'}}
                 >
-                  Lihat Projek
+                  <span className="relative">✨ Lihat Projek Kami</span>
                 </Link>
+
                 <Link
-                    href="https://api.whatsapp.com/send/?phone=6289526323412&text=Halo,%20saya%20tertarik%20untuk%20konsultasi%20gratis.%20Bolehkah%20saya%20bertanya%20lebih%20lanjut?&type=phone_number&app_absent=0"
+                    href="https://wa.me/6289526323412"
                     target="_blank"
-                    rel="noopener noreferrer"
-                    className="border-2 border-[#6D6875] text-[#6D6875] px-8 py-3 rounded-md hover:bg-[#6D6875]/10 transition"
+                    className="flex items-center px-8 py-4 font-medium text-[#6D6875] hover:text-[#B89F7B] transition-colors duration-300 group"
                 >
-                  Hubungi Saya
+                  <span className="mr-2">💬</span>
+                  <span className="border-b-2 border-transparent group-hover:border-[#B89F7B] pb-1 transition-all">
+                  Konsultasi Gratis
+                </span>
                 </Link>
               </div>
-
             </div>
 
             {/* Image */}
             <div className="lg:w-1/2 relative">
-              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl">
+              <div className="relative aspect-[1.1] rounded-[2.5rem] overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
                 <Image
                     src="/12.png"
-                    alt="Profile"
+                    alt="Digital Solution Illustration"
                     fill
                     className="object-cover"
+                    priority
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
               </div>
             </div>
           </div>
         </section>
 
-        {/* Featured Projects */}
-        <section className="py-20 bg-[#F5F3F0]">
+        {/* Why Go Digital Section */}
+        <section className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-serif text-[#6D6875] text-center mb-12">
-              Projek Unggulan
-            </h2>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-[#2D2A32] mb-4">
+                Mengapa Harus Digital?
+              </h2>
+              <p className="text-lg text-[#6D6875]/90 max-w-2xl mx-auto">
+                Transformasi digital bukan sekedar tren, tapi kebutuhan bisnis di era modern
+              </p>
+            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {projects.map((project, index) => (
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {[
+                {icon: '🌐', title: 'Jangkauan Luas', desc: 'Buka pasar baru hingga mancanegara'},
+                {icon: '💸', title: 'Hemat Biaya', desc: 'Promosi digital lebih efisien'},
+                {icon: '⏱️', title: '24/7', desc: 'Bisnis aktif tanpa henti'},
+                {icon: '📊', title: 'Data Akurat', desc: 'Analitik real-time'},
+              ].map((item, i) => (
                   <div
-                      key={index}
-                      className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition"
+                      key={i}
+                      className="p-8 rounded-2xl bg-white hover:bg-[#FFF9F2] transition-all duration-300 shadow-lg hover:shadow-xl"
                   >
-                    <div className="relative aspect-video">
-                      <Image
-                          src={project.image}
-                          alt={project.title}
-                          fill
-                          className="object-cover"
-                      />
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-xl font-semibold text-[#6D6875] mb-2">
-                        {project.title}
-                      </h3>
-                      <p className="text-[#6D6875]/80 mb-4">{project.description}</p>
-                      <div className="flex flex-wrap gap-2">
-                        {project.tech.map((tech, i) => (
-                            <span
-                                key={i}
-                                className="px-3 py-1 bg-[#F5F3F0] text-[#6D6875] rounded-full text-sm"
-                            >
-                        {tech}
-                      </span>
-                        ))}
-                      </div>
-                    </div>
+                    <div className="text-4xl mb-6">{item.icon}</div>
+                    <h3 className="text-xl font-semibold text-[#4A453E] mb-3">{item.title}</h3>
+                    <p className="text-[#6D6875]/90">{item.desc}</p>
                   </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Testimonials */}
-        <section className="py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-serif text-[#6D6875] text-center mb-12">
-              Testimoni Klien
-            </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {testimonials.map((testimonial, index) => (
-                  <div
-                      key={index}
-                      className="p-8 rounded-xl bg-white shadow-md border-l-4 border-[#B89F7B]"
-                  >
-                    <div className="flex items-center gap-4 mb-4">
-                      <Image
-                          src={testimonial.avatar}
-                          alt={testimonial.name}
-                          width={60}
-                          height={60}
-                          className="rounded-full"
-                      />
-                      <div>
-                        <h4 className="text-lg font-semibold text-[#6D6875]">
-                          {testimonial.name}
-                        </h4>
-                        <p className="text-[#6D6875]/80">{testimonial.role}</p>
-                      </div>
-                    </div>
-                    <p className="text-[#6D6875]/80 italic">
-                      "{testimonial.text}"
-                    </p>
-                  </div>
-              ))}
-            </div>
-          </div>
-        </section>
-        <section className="py-20 bg-[#B89F7B]">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-serif text-white mb-6">
-              Mulai Proyek Anda Sekarang
-            </h2>
-            <p className="text-white/90 mb-8 text-lg max-w-2xl mx-auto">
-              Tertarik bekerja sama? Mari diskusikan ide Anda dan buat sesuatu yang luar biasa bersama.
-            </p>
-            <div className="flex flex-col md:flex-row justify-center gap-4">
-              <Link
-                  href="/contact"
-                  className="bg-white text-[#B89F7B] px-8 py-3 rounded-md hover:bg-gray-100 transition"
-              >
-                Konsultasi Gratis
-              </Link>
-              <Link
-                  href="/portfolio"
-                  className="border-2 border-white text-white px-8 py-3 rounded-md hover:bg-white/10 transition"
-              >
-                Lihat Projek Lain
-              </Link>
+        {/* CTA Section */}
+        <section className="relative py-24 overflow-hidden">
+          <div className="absolute inset-0 bg-[#4A453E] pattern-isometric pattern-opacity-10 pattern-size-32 pattern-gray-800" />
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div className="bg-white rounded-2xl p-8 shadow-2xl transform hover:scale-[1.01] transition-transform duration-300">
+              <h2 className="text-3xl font-bold text-[#4A453E] mb-6">
+                Siap Transformasi Bisnis Anda?
+              </h2>
+              <p className="text-lg text-[#6D6875]/90 mb-8 max-w-xl mx-auto">
+                Jadwalkan konsultasi gratis sekarang dan dapatkan roadmap digitalisasi khusus untuk UMKM Anda
+              </p>
+              <div className="flex flex-col md:flex-row justify-center gap-4">
+                <Link
+                    href="https://wa.me/6289526323412"
+                    className="inline-flex items-center justify-center px-8 py-4 bg-[#B89F7B] hover:bg-[#9B8574] text-white rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+                >
+                  📞 Hubungi via WhatsApp
+                </Link>
+              </div>
             </div>
           </div>
         </section>
