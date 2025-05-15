@@ -39,7 +39,7 @@ export default function About() {
                         </h1>
 
                         <p className="text-lg text-[#6D6875]/80 leading-relaxed">
-                            Saya adalah Web Developer dan Digital Manager yang berdedikasi untuk menghadirkan solusi online end-to-end—dari pembuatan website hingga pengelolaan kehadiran digital Anda. Berawal sebagai full-stack developer, kini saya juga mengelola strategi konten, media sosial, dan kampanye iklan untuk UMKM dengan teknologi dan metode terbaru.
+                            Saya adalah Web Developer dan Digital enthusiast yang berdedikasi untuk menghadirkan solusi online end-to-end—dari pembuatan website hingga pengelolaan kehadiran digital Anda. Berawal sebagai full-stack developer, kini saya juga mengelola strategi konten, media sosial, dan kampanye iklan untuk UMKM dengan teknologi dan metode terbaru.
 
                             Nilai Utama yang Saya Bawa:
 
