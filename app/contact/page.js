@@ -10,7 +10,7 @@ export default function Contact() {
                     {/* Contact Info */}
                     <div className="space-y-8">
                         <h1 className="text-4xl md:text-5xl font-serif text-[#6D6875]">
-                            Hubungi Saya
+                            Hubungi Kami
                         </h1>
 
                         {/* Contact Methods */}

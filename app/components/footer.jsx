@@ -12,7 +12,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 export default function Footer() {
     const socialLinks = [
         { icon: Instagram, url: "https://www.instagram.com/bisagodigital/" },
-        { icon: Linkedin, url: "https://linkedin.com/in/muhammadkelvin" }
+        { icon: Linkedin, url: "https://www.linkedin.com/company/bisa-go-digital "}
     ]
 
     const waLink = "https://api.whatsapp.com/send/?phone=6289526323412&text=Halo,%20saya%20tertarik%20untuk%20konsultasi%20gratis.%20Bolehkah%20saya%20bertanya%20lebih%20lanjut?&type=phone_number&app_absent=0" // Ganti dengan nomor WhatsApp Anda

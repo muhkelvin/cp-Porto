@@ -24,7 +24,7 @@ export default function About() {
                     <div className="lg:w-1/2 w-full">
                         <div className="relative w-full aspect-square rounded-2xl overflow-hidden shadow-xl">
                             <Image
-                                src="/Ghib.png"
+                                src="/1.png"
                                 alt="Profile"
                                 fill
                                 className="object-cover"
@@ -35,23 +35,17 @@ export default function About() {
                     {/* Text Content */}
                     <div className="lg:w-1/2 space-y-6">
                         <h1 className="text-4xl md:text-5xl font-serif text-[#6D6875]">
-                            Tentang Saya
+                            Tentang Kami – Bisa Go Digital
                         </h1>
 
                         <p className="text-lg text-[#6D6875]/80 leading-relaxed">
-                            Saya adalah Web Developer dan Digital enthusiast yang berdedikasi untuk menghadirkan solusi online end-to-end—dari pembuatan website hingga pengelolaan kehadiran digital Anda. Berawal sebagai full-stack developer, kini saya juga mengelola strategi konten, media sosial, dan kampanye iklan untuk UMKM dengan teknologi dan metode terbaru.
+                            Bisa Go Digital adalah layanan digital kreatif yang membantu UMKM dan profesional independen membangun kehadiran online yang kuat melalui website dan digital marketing. Kami percaya bahwa setiap bisnis, sekecil apa pun, berhak tampil profesional di ranah digital.
 
-                            Nilai Utama yang Saya Bawa:
+                            Dengan pendekatan yang personal, edukatif, dan efisien, kami menawarkan solusi end-to-end mulai dari pembuatan website, pengelolaan media sosial, hingga kampanye digital yang dirancang khusus sesuai kebutuhan dan anggaran Anda.
 
-                            🧹 Kode Bersih & Terstruktur
+                            Kami hadir sebagai mitra digital Anda yang memahami tantangan pelaku usaha lokal dan siap membantu Anda tumbuh di era ekonomi digital.
 
-                            🤝 Komunikasi Terbuka & Tepat Waktu
 
-                            🎯 Fokus pada User Experience & Engagement
-
-                            📈 Digital Management Terintegrasi
-
-                            Saya percaya kolaborasi adalah kunci: Anda ceritakan kebutuhan bisnis, saya wujudkan dan kelola agar Anda tumbuh secara digital.
                         </p>
 
                         <p className="text-lg text-[#6D6875]/80 leading-relaxed">
