@@ -48,7 +48,7 @@ export default function Contact() {
                                 </h3>
                                 <div className="flex gap-6">
                                     <a
-                                        href="https://www.linkedin.com/in/muhkelvin/"
+                                        href="https://www.linkedin.com/company/bisa-go-digital"
                                         className="text-[#6D6875] hover:text-[#B89F7B] transition"
                                     >
                                         <FiLinkedin className="w-6 h-6" />
@@ -60,7 +60,7 @@ export default function Contact() {
                                         <FiGithub className="w-6 h-6" />
                                     </a>
                                     <a
-                                        href="#"
+                                        href="https://www.instagram.com/bisagodigital/"
                                         className="text-[#6D6875] hover:text-[#B89F7B] transition"
                                     >
                                         <FiInstagram className="w-6 h-6" />
