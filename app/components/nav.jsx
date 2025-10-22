@@ -34,8 +34,11 @@ export default function Nav() {
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
-                    <Link href="/" className="text-2xl font-bold text-[#2C3E50] hover:text-[#3498DB] transition-colors">
-                        BisaGoDigital
+                    <Link
+                        href="/"
+                        className="text-2xl font-bold text-emerald-700 hover:text-emerald-600 transition-colors"
+                    >
+                        Bigo Go Digital by Kelvin
                     </Link>
 
                     {/* Desktop Menu */}
@@ -46,11 +49,11 @@ export default function Nav() {
                                 href={link.path}
                                 target={link.external ? "_blank" : undefined}
                                 rel={link.external ? "noopener noreferrer" : undefined}
-                                className="flex items-center gap-2 text-[#34495E] hover:text-[#3498DB] transition-colors group"
+                                className="flex items-center gap-2 text-gray-700 hover:text-emerald-600 transition-colors group"
                             >
                                 <link.icon
                                     size={18}
-                                    className="text-[#7F8C8D] group-hover:text-[#3498DB] transition-colors"
+                                    className="text-gray-400 group-hover:text-emerald-600 transition-colors"
                                 />
                                 {link.name}
                             </Link>
@@ -60,7 +63,7 @@ export default function Nav() {
                     {/* Mobile Menu Toggle */}
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="md:hidden text-[#2C3E50] p-2 rounded-md"
+                        className="md:hidden text-emerald-700 p-2 rounded-md"
                     >
                         {isOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>
@@ -68,7 +71,7 @@ export default function Nav() {
 
                 {/* Mobile Menu */}
                 {isOpen && (
-                    <div className="md:hidden absolute left-0 right-0 bg-white shadow-lg">
+                    <div className="md:hidden absolute left-0 right-0 bg-white shadow-lg border-t border-gray-100">
                         <div className="px-2 pt-2 pb-3 space-y-1">
                             {links.map((link) => (
                                 <Link
@@ -76,10 +79,13 @@ export default function Nav() {
                                     href={link.path}
                                     target={link.external ? "_blank" : undefined}
                                     rel={link.external ? "noopener noreferrer" : undefined}
-                                    className="flex items-center px-3 py-2 text-[#34495E] hover:bg-[#ECF0F1] rounded-md"
+                                    className="flex items-center px-3 py-2 text-gray-700 hover:bg-emerald-50 hover:text-emerald-700 rounded-md transition"
                                     onClick={() => setIsOpen(false)}
                                 >
-                                    <link.icon size={18} className="mr-3 text-[#7F8C8D]" />
+                                    <link.icon
+                                        size={18}
+                                        className="mr-3 text-gray-400 group-hover:text-emerald-600"
+                                    />
                                     {link.name}
                                 </Link>
                             ))}
