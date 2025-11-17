@@ -48,7 +48,7 @@ export default function Contact() {
                                 </h3>
                                 <div className="flex gap-6">
                                     <a
-                                        href="https://www.linkedin.com/company/bisa-go-digital"
+                                        href="https://www.linkedin.com/in/muhkelvin/"
                                         className="text-emerald-700 hover:text-emerald-600 transition"
                                     >
                                         <FiLinkedin className="w-6 h-6" />
@@ -59,12 +59,12 @@ export default function Contact() {
                                     >
                                         <FiGithub className="w-6 h-6" />
                                     </a>
-                                    <a
+                                    {/* <a
                                         href="https://www.instagram.com/bisagodigital/"
                                         className="text-emerald-700 hover:text-emerald-600 transition"
                                     >
                                         <FiInstagram className="w-6 h-6" />
-                                    </a>
+                                    </a> */}
                                 </div>
                             </div>
 
@@ -74,32 +74,11 @@ export default function Contact() {
                                     Lokasi
                                 </h3>
                                 <p className="text-emerald-700/80 mb-4">
-                                    Bisa Go Digital<br />
+                                    MuhKelvin Developer <br />
                                     (Melayani seluruh Indonesia secara remote)
                                 </p>
 
-                                {/* Google Maps Embed */}
-                                <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg border border-emerald-100">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32654820.88251219!2d117.88879999999999!3d-2.4456499999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48bed00446dd0277%3A0xb9fc4dd28f3d3658!2sBisa%20Go%20Digital!5e0!3m2!1sen!2sid!4v1761153901058!5m2!1sen!2sid"
-                                        className="w-full h-full"
-                                        style={{ border: 0 }}
-                                        allowFullScreen
-                                        loading="lazy"
-                                        referrerPolicy="no-referrer-when-downgrade"
-                                    ></iframe>
-                                </div>
-
-                                {/* Tombol Buka Maps */}
-                                <a
-                                    href="https://www.google.com/maps/place/Bisa+Go+Digital/@-2.44565,117.8888,4z/data=!3m1!4b1!4m6!3m5!1s0x48bed00446dd0277:0xb9fc4dd28f3d3658!8m2!3d-2.44565!4d117.8888!16s%2Fg%2F11x6z6srhl?hl=en&entry=ttu"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="mt-4 inline-flex items-center gap-2 bg-emerald-600 text-white px-6 py-2 rounded-md hover:bg-emerald-700 transition shadow-md"
-                                >
-                                    <FiMapPin className="w-5 h-5" />
-                                    Buka di Google Maps
-                                </a>
+                               
                             </div>
                         </div>
                     </div>

@@ -38,8 +38,8 @@ export default function About() {
             </h1>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              Halo, saya <strong className="text-emerald-700">Muhammad Kelvin</strong> — Freelance Web Developer di <strong>Bisa Go Digital</strong>. 
-              Saya membantu UMKM dan bisnis lokal membangun website profesional yang cepat, modern, dan mudah dikelola.
+              Halo, saya <strong className="text-emerald-700">Muhammad Kelvin</strong> <strong>Web Developer freelance yang fokus membantu UMKM dan bisnis lokal hadir profesional di dunia digital.</strong>. 
+              
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">

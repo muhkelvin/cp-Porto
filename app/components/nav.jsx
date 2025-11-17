@@ -38,7 +38,7 @@ export default function Nav() {
                         href="/"
                         className="text-2xl font-bold text-emerald-700 hover:text-emerald-600 transition-colors"
                     >
-                        Bigo Go Digital by Kelvin
+                        MuhKelvin Developer
                     </Link>
 
                     {/* Desktop Menu */}

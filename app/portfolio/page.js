@@ -5,34 +5,34 @@ import Image from 'next/image'
 const categories = ['All', 'Company Profile', 'Landing Page', 'Blog/Magazine', 'Custom Website', 'CMS']
 
 const projects = [
-    {
-        title: 'Contact Management System',
-        category: 'CMS',
-        description: 'Sistem manajemen kontak dengan fitur CRUD dan pengelompokan data',
-        image: 'https://picsum.photos/600/400?random=21',
-        external: 'https://cms-green-ten.vercel.app/'
-    },
-    {
-        title: 'Shorten URL',
-        category: 'Custom Website',
-        description: 'Aplikasi pemendek URL dengan fitur statistik sederhana',
-        image: 'https://picsum.photos/600/400?random=22',
-        external: 'https://shorten-url-umber-sigma.vercel.app/'
-    },
-    {
-        title: 'Dashboard Pembukuan',
-        category: 'Custom Website',
-        description: 'Aplikasi dashboard untuk mencatat dan memantau keuangan pribadi atau bisnis kecil',
-        image: 'https://picsum.photos/600/400?random=23',
-        external: 'https://dahboard-pembukuan.vercel.app/'
-    },
-    {
-        title: 'Workout Plan',
-        category: 'Custom Website',
-        description: 'Aplikasi perencanaan latihan untuk membantu pengguna membentuk jadwal olahraga harian',
-        image: 'https://picsum.photos/600/400?random=24',
-        external: 'https://workout-plan-mnljz9t3r-muhkelvinms-projects.vercel.app'
-    },
+    // {
+    //     title: 'Contact Management System',
+    //     category: 'CMS',
+    //     description: 'Sistem manajemen kontak dengan fitur CRUD dan pengelompokan data',
+    //     image: 'https://picsum.photos/600/400?random=21',
+    //     external: 'https://cms-green-ten.vercel.app/'
+    // },
+    // {
+    //     title: 'Shorten URL',
+    //     category: 'Custom Website',
+    //     description: 'Aplikasi pemendek URL dengan fitur statistik sederhana',
+    //     image: 'https://picsum.photos/600/400?random=22',
+    //     external: 'https://shorten-url-umber-sigma.vercel.app/'
+    // },
+    // {
+    //     title: 'Dashboard Pembukuan',
+    //     category: 'Custom Website',
+    //     description: 'Aplikasi dashboard untuk mencatat dan memantau keuangan pribadi atau bisnis kecil',
+    //     image: 'https://picsum.photos/600/400?random=23',
+    //     external: 'https://dahboard-pembukuan.vercel.app/'
+    // },
+    // {
+    //     title: 'Workout Plan',
+    //     category: 'Custom Website',
+    //     description: 'Aplikasi perencanaan latihan untuk membantu pengguna membentuk jadwal olahraga harian',
+    //     image: 'https://picsum.photos/600/400?random=24',
+    //     external: 'https://workout-plan-mnljz9t3r-muhkelvinms-projects.vercel.app'
+    // },
     {
         title: 'Website Property LuxeLiving',
         category: 'Custom Website',

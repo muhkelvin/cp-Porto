@@ -3,8 +3,8 @@ import Nav from './components/nav'
 import Footer from './components/footer'
 
 export const metadata = {
-    title: 'Bisa Go Digital',
-    description: 'Bisa Go Digital  Portfolio',
+    title: 'Muhammad Kelvin',
+    description: 'Muhammad Kelvin  Portfolio',
 }
 
 export default function RootLayout({ children }) {

@@ -21,10 +21,10 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-emerald-600 pb-10">
                     {/* Brand Info */}
                     <div>
-                        <h2 className="text-2xl font-bold mb-2">Bigo Go Digital by Kelvin</h2>
+                        <h2 className="text-2xl font-bold mb-2">Muhammad Kelvin</h2>
                         <p className="text-emerald-100 text-sm leading-relaxed">
-                            Solusi lengkap untuk bisnis digital Anda —
-                            mulai dari pembuatan website hingga pengelolaan branding online.
+                            Spesialis dalam membangun website modern, responsif, dan SEO-friendly 
+untuk UMKM & startup di Indonesia.
                         </p>
                         <div className="flex mt-4 space-x-4">
                             {socialLinks.map((social, index) => (
@@ -44,10 +44,7 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg font-semibold mb-3">Layanan</h3>
                         <ul className="space-y-2 text-emerald-100 text-sm">
-                            <li><Link href="/services" className="hover:text-white transition">Pembuatan Website</Link></li>
-                            <li><Link href="/services" className="hover:text-white transition">Branding & Desain</Link></li>
-                            <li><Link href="/services" className="hover:text-white transition">Manajemen Sosial Media</Link></li>
-                        </ul>
+                            <li><Link href="/services" className="hover:text-white transition">Pembuatan Website</Link></li>                        </ul>
                     </div>
 
                     {/* Perusahaan */}
@@ -74,10 +71,10 @@ export default function Footer() {
                 {/* Bottom Section */}
                 <div className="mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-emerald-100 space-y-4 md:space-y-0">
                     <p>
-                        &copy; {new Date().getFullYear()} <strong>Bisa Go Digital</strong>. All Rights Reserved.
+                        &copy; {new Date().getFullYear()} <strong>Muhammad Kelvin</strong>. All Rights Reserved.
                     </p>
                     <p>
-                        Dibuat dengan ❤️ oleh <span className="text-white font-medium">Kelvin</span>
+                        Dibuat ❤️ oleh <span className="text-white font-medium">Kelvin</span>
                     </p>
                 </div>
             </div>

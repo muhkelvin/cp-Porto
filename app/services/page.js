@@ -1,71 +1,65 @@
 "use client"
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import {
-    FiGlobe,
+    FiLayout,
     FiBriefcase,
     FiShoppingCart,
     FiFileText,
-    FiLayout,
-    FiCode,
 } from 'react-icons/fi';
 
-// Services Data - Simplified
+// Services Data - Fokus 4 Layanan Utama
 const services = [
     {
         icon: <FiLayout className="w-10 h-10 text-emerald-600" />,
         title: 'Landing Page',
         desc: 'Website satu halaman untuk promosi produk/jasa dengan desain konversi tinggi',
+        bestFor: 'Product launch, promo event, lead generation'
     },
     {
         icon: <FiBriefcase className="w-10 h-10 text-emerald-600" />,
         title: 'Company Profile',
         desc: 'Website multi-halaman untuk profil bisnis dengan portfolio & layanan lengkap',
+        bestFor: 'Perusahaan, konsultan, studio/agency'
     },
     {
         icon: <FiShoppingCart className="w-10 h-10 text-emerald-600" />,
-        title: 'Katalog Produk',
-        desc: 'Toko online atau katalog digital dengan sistem manajemen produk',
+        title: 'Katalog Digital',
+        desc: 'Katalog produk online dengan sistem order via WhatsApp',
+        bestFor: 'UMKM, toko retail, distributor'
     },
     {
         icon: <FiFileText className="w-10 h-10 text-emerald-600" />,
         title: 'Website + Blog',
         desc: 'Website dengan CMS untuk posting artikel dan content marketing',
-    },
-    {
-        icon: <FiCode className="w-10 h-10 text-emerald-600" />,
-        title: 'Custom Web App',
-        desc: 'Solusi web khusus sesuai kebutuhan bisnis spesifik Anda',
-    },
-    {
-        icon: <FiGlobe className="w-10 h-10 text-emerald-600" />,
-        title: 'Maintenance',
-        desc: 'Update rutin, backup, dan technical support untuk website Anda',
+        bestFor: 'Personal brand, media, content creator'
     },
 ];
 
-// Simplified Pricing
+// Pricing Packages - Updated
 const pricingPackages = [
     {
         name: 'Paket Starter',
         subtitle: 'Landing Page',
         description: 'Perfect untuk UMKM yang baru mulai go digital atau butuh website sederhana',
-        price: 'Rp 1.200.000',
+        price: 'Rp 1.500.000',
         features: [
             'Landing page 1 halaman',
             'Responsive design (mobile-friendly)',
-            '3-5 section konten',
-            'Form kontak + WhatsApp button',
-            'Basic SEO setup',
-            'Free domain .id atau .com (1 tahun)',
-            'Shared hosting (1 tahun)',
-            'SSL certificate (HTTPS)',
+            '4-6 section konten',
+            'Form kontak + email notification',
+            'WhatsApp floating button',
+            'Loading speed optimization',
+            'Basic SEO + Meta tags',
             'Google Analytics setup',
+            'SSL certificate (HTTPS)',
             '2x revisi design',
             'Tutorial cara update konten',
+            'Free support 30 hari',
         ],
         timeline: '1-2 minggu',
         badge: null,
+        note: 'Domain & hosting setup dibantu (biaya terpisah ~Rp 300-500rb/tahun)'
     },
     {
         name: 'Paket Professional',
@@ -73,12 +67,13 @@ const pricingPackages = [
         description: 'Untuk bisnis yang ingin tampil lebih lengkap dan profesional',
         price: 'Rp 3.000.000',
         features: [
-            'Website multi-page (hingga 5 halaman)',
-            'Custom design sesuai branding',
-            'Homepage + About + Services + Gallery + Contact',
-            'Blog section (opsional)',
+            'Website multi-page (hingga 6 halaman)',
+            'Homepage + About + Services + Portfolio + Contact',
+            'Blog/artikel section (CMS ready)',
             'Admin panel untuk update konten',
-            'SEO optimization',
+            'Contact form + email notification',
+            'Google Maps integration',
+            'SEO optimization + Sitemap XML',
             'Google Analytics + Facebook Pixel',
             'Social media integration',
             'WhatsApp chat widget',
@@ -87,31 +82,31 @@ const pricingPackages = [
             '3 email domain (@namausaha.com)',
             '3x revisi design',
             'Video tutorial lengkap',
-            'Free minor update 1 bulan',
+            'Free support & minor update 1 bulan',
         ],
         timeline: '3-4 minggu',
         badge: 'Most Popular',
     },
     {
         name: 'Paket Business',
-        subtitle: 'E-Commerce / Katalog',
-        description: 'Solusi lengkap untuk toko online atau katalog produk',
+        subtitle: 'Katalog Digital',
+        description: 'Solusi katalog produk online dengan order via WhatsApp',
         price: 'Rp 5.500.000',
         features: [
             'Website dengan katalog produk (unlimited)',
             'Custom design premium',
             'Product management system',
             'Kategori & filter produk',
-            'Shopping cart (opsional)',
-            'Checkout via WhatsApp atau payment gateway',
-            'Homepage + Shop + Product Detail + About + Contact',
+            'Product detail page',
+            'Order via WhatsApp (keranjang belanja)',
+            'Homepage + Shop + Product + About + Contact',
             'Blog section',
             'Admin panel advanced',
             'SEO optimization per halaman',
             'Google Analytics + Facebook Pixel',
             'Social media integration',
             'Free domain .com/.id (1 tahun)',
-            'Dedicated hosting (1 tahun)',
+            'Shared hosting (1 tahun)',
             '5 email domain',
             'Unlimited revisi selama development',
             'Video tutorial lengkap',
@@ -119,6 +114,7 @@ const pricingPackages = [
         ],
         timeline: '4-6 minggu',
         badge: 'Best Value',
+        note: 'Untuk E-Commerce dengan payment gateway, mulai dari Rp 8jt (konsultasi dulu)'
     },
     {
         name: 'Paket Custom',
@@ -135,21 +131,58 @@ const pricingPackages = [
             'API integration',
             'Dan fitur custom lainnya',
             'Konsultasi & requirement gathering',
-            'Proposal teknis + timeline',
+            'Proposal teknis + timeline detail',
             'Development sesuai agreement',
             'Testing & quality assurance',
             'Documentation lengkap',
             'Training & handover',
         ],
-        timeline: '6-10 minggu',
+        timeline: 'Timeline & harga disesuaikan',
         badge: null,
     },
 ];
 
-// Standard Features
+// Add-On Services
+const addOnServices = [
+    {
+        icon: '🔧',
+        title: 'Website Maintenance',
+        price: 'Rp 500rb/bulan',
+        features: [
+            'Update konten rutin',
+            'Backup mingguan',
+            'Security monitoring',
+            'Priority support',
+        ]
+    },
+    {
+        icon: '📈',
+        title: 'SEO Optimization',
+        price: 'Rp 1.5jt (one-time)',
+        features: [
+            'Keyword research',
+            'On-page SEO',
+            'Speed optimization',
+            'Search Console setup',
+        ]
+    },
+    {
+        icon: '🎨',
+        title: 'Redesign Website',
+        price: 'Mulai Rp 2jt',
+        features: [
+            'Refresh tampilan lama',
+            'Mobile optimization',
+            'UX improvement',
+            'Modern design trends',
+        ]
+    },
+];
+
+// Standard Features - Updated
 const standardFeatures = [
     'Responsive Design (Mobile-Friendly)',
-    'Fast Loading Speed',
+    'Fast Loading Speed (< 3 detik)',
     'SEO-Friendly Structure',
     'SSL Certificate (HTTPS)',
     'WhatsApp Integration',
@@ -157,6 +190,17 @@ const standardFeatures = [
     'Contact Form',
     'Social Media Links',
     'Browser Compatible',
+    'Backup Setup',
+    'Documentation & Tutorial',
+];
+
+// What's NOT Included
+const notIncluded = [
+    'Copywriting/penulisan konten (bisa dibantu dengan fee tambahan)',
+    'Foto produk/professional photography',
+    'Logo design (jika belum punya)',
+    'Biaya perpanjangan domain/hosting tahun ke-2',
+    'Update konten rutin setelah masa support habis',
 ];
 
 // Process Steps
@@ -197,7 +241,7 @@ const SectionTitle = ({ title, subtitle }) => (
 );
 
 const ServicesGrid = () => (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {services.map((s, i) => (
             <motion.div
                 key={i}
@@ -206,7 +250,10 @@ const ServicesGrid = () => (
             >
                 <div className="mb-4">{s.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">{s.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{s.desc}</p>
+                <p className="text-gray-600 leading-relaxed mb-3">{s.desc}</p>
+                <p className="text-sm text-emerald-600 font-medium">
+                    ✓ {s.bestFor}
+                </p>
             </motion.div>
         ))}
     </div>
@@ -262,7 +309,7 @@ export default function Services() {
                                 </div>
 
                                 {/* Features */}
-                                <ul className="flex-1 space-y-2 text-gray-700 mb-6">
+                                <ul className="flex-1 space-y-2 text-gray-700 mb-4">
                                     {plan.features.map((f, i) => (
                                         <li key={i} className="flex items-start text-sm">
                                             <svg className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
@@ -272,6 +319,13 @@ export default function Services() {
                                         </li>
                                     ))}
                                 </ul>
+
+                                {/* Note */}
+                                {plan.note && (
+                                    <div className="mb-4 p-3 bg-amber-50 border border-amber-200 rounded-lg">
+                                        <p className="text-xs text-amber-800">{plan.note}</p>
+                                    </div>
+                                )}
 
                                 {/* CTA Button */}
                                 <a
@@ -286,19 +340,54 @@ export default function Services() {
                         ))}
                     </div>
 
-                    <div className="mt-12 text-center space-y-2">
-                        <p className="text-gray-600">
-                            💰 <strong>Sistem Pembayaran:</strong> DP 50% di awal, pelunasan 50% sebelum launch
+                    {/* Payment Info */}
+                    <div className="mt-12 text-center space-y-3 bg-white p-6 rounded-lg shadow-md max-w-3xl mx-auto">
+                        <p className="text-gray-700 font-semibold">
+                            💰 Sistem Pembayaran:
                         </p>
-                        <p className="text-sm text-gray-500">
-                            *Harga sudah include domain & hosting untuk 1 tahun pertama
+                        <div className="text-gray-600 space-y-1">
+                            <p>▸ DP 50% untuk mulai project</p>
+                            <p>▸ 25% saat development selesai (untuk review)</p>
+                            <p>▸ 25% sisanya sebelum launch</p>
+                        </div>
+                        <p className="text-sm text-gray-500 pt-2">
+                            ✓ Transfer via BCA / Mandiri / QRIS • Invoice resmi setiap pembayaran
                         </p>
                     </div>
                 </div>
             </section>
 
+            {/* Add-On Services */}
+            <section className="py-20 bg-white px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+                <SectionTitle 
+                    title="Layanan Tambahan" 
+                    subtitle="Tingkatkan performa website Anda dengan layanan add-on" 
+                />
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    {addOnServices.map((addon, i) => (
+                        <motion.div
+                            key={i}
+                            className="bg-gradient-to-br from-emerald-50 to-white p-6 rounded-xl shadow-md border border-emerald-100 hover:shadow-lg transition"
+                            whileHover={{ scale: 1.03 }}
+                        >
+                            <div className="text-4xl mb-3">{addon.icon}</div>
+                            <h3 className="text-xl font-bold text-gray-800 mb-2">{addon.title}</h3>
+                            <p className="text-2xl font-bold text-emerald-600 mb-4">{addon.price}</p>
+                            <ul className="space-y-2">
+                                {addon.features.map((f, idx) => (
+                                    <li key={idx} className="flex items-start text-sm text-gray-700">
+                                        <span className="text-emerald-500 mr-2">✓</span>
+                                        {f}
+                                    </li>
+                                ))}
+                            </ul>
+                        </motion.div>
+                    ))}
+                </div>
+            </section>
+
             {/* Standard Features */}
-            <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+            <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto bg-gray-50">
                 <SectionTitle 
                     title="Yang Pasti Anda Dapatkan" 
                     subtitle="Fitur standar di setiap paket website yang saya kerjakan" 
@@ -307,17 +396,32 @@ export default function Services() {
                     {standardFeatures.map((feature, i) => (
                         <div
                             key={i}
-                            className="flex items-center gap-3 p-4 rounded-lg bg-gradient-to-r from-emerald-50 to-white border border-emerald-100"
+                            className="flex items-center gap-3 p-4 rounded-lg bg-white border border-emerald-100 shadow-sm"
                         >
                             <span className="text-emerald-600 text-xl font-bold">✓</span>
-                            <span className="text-gray-700 font-medium">{feature}</span>
+                            <span className="text-gray-700 font-medium text-sm">{feature}</span>
                         </div>
                     ))}
+                </div>
+
+                {/* What's NOT Included */}
+                <div className="mt-12 bg-amber-50 border-2 border-amber-200 rounded-xl p-6 max-w-3xl mx-auto">
+                    <h3 className="text-xl font-bold text-amber-800 mb-4 flex items-center gap-2">
+                        <span>⚠️</span> Yang TIDAK Termasuk:
+                    </h3>
+                    <ul className="space-y-2">
+                        {notIncluded.map((item, i) => (
+                            <li key={i} className="flex items-start text-sm text-amber-900">
+                                <span className="text-amber-600 mr-2">✗</span>
+                                {item}
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             </section>
 
             {/* Process */}
-            <section className="py-20 bg-gray-50">
+            <section className="py-20 bg-white">
                 <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                     <SectionTitle 
                         title="Cara Kerja Saya" 
@@ -327,7 +431,7 @@ export default function Services() {
                         {processSteps.map((p) => (
                             <motion.div
                                 key={p.step}
-                                className="bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-lg transition"
+                                className="bg-gradient-to-br from-emerald-50 to-white p-6 rounded-2xl shadow-md text-center hover:shadow-lg transition border border-emerald-100"
                                 whileHover={{ scale: 1.05 }}
                             >
                                 <div className="w-14 h-14 mx-auto bg-gradient-to-br from-emerald-500 to-emerald-600 text-white rounded-full flex items-center justify-center mb-4 text-xl font-bold shadow-lg">
@@ -350,7 +454,7 @@ export default function Services() {
                     {[
                         {
                             q: 'Berapa lama proses pembuatan website?',
-                            a: 'Tergantung paket: Landing page 1-2 minggu, Company profile 3-4 minggu, E-commerce 4-6 minggu, Custom 6-10 minggu.'
+                            a: 'Tergantung paket: Landing page 1-2 minggu, Company profile 3-4 minggu, Katalog Digital 4-6 minggu, Custom 6-10 minggu.'
                         },
                         {
                             q: 'Apakah saya bisa update website sendiri?',
@@ -362,10 +466,18 @@ export default function Services() {
                         },
                         {
                             q: 'Apakah ada garansi?',
-                            a: 'Ya, saya berikan free support 30 hari untuk bug fixing setelah launch.'
+                            a: 'Ya, saya berikan free support 30 hari untuk bug fixing dan troubleshooting setelah launch.'
+                        },
+                        {
+                            q: 'Apakah include domain dan hosting?',
+                            a: 'Paket Professional dan Business include domain + hosting 1 tahun. Paket Starter dibantu setup (biaya terpisah ~Rp 300-500rb/tahun).'
+                        },
+                        {
+                            q: 'Bagaimana untuk E-Commerce dengan payment gateway?',
+                            a: 'Untuk e-commerce full dengan shopping cart dan payment gateway (Midtrans, dll), harga mulai dari Rp 8-10jt. Konsultasi dulu untuk diskusi detail.'
                         },
                     ].map((faq, i) => (
-                        <div key={i} className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                        <div key={i} className="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:border-emerald-200 transition">
                             <h4 className="font-semibold text-gray-800 mb-2">Q: {faq.q}</h4>
                             <p className="text-gray-600">A: {faq.a}</p>
                         </div>
@@ -380,7 +492,7 @@ export default function Services() {
                         Siap Memulai Project Website Anda?
                     </h2>
                     <p className="text-white/90 text-lg mb-8 leading-relaxed">
-                        Jadwalkan konsultasi gratis sekarang. No pressure, no commitment - just a friendly chat about your needs.
+                        Jadwalkan konsultasi gratis sekarang. No pressure, no commitment—just a friendly chat about your needs.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a 

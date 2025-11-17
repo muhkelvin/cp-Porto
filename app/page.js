@@ -11,7 +11,7 @@ export default function Home() {
             <div className="lg:w-1/2 space-y-8 relative z-10">
               <div className="inline-block mb-4">
                 <span className="bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-medium">
-                  👋 Freelance Web Developer
+                  Hi! Saya Muhammad Kelvin 👋
                 </span>
               </div>
 
@@ -74,7 +74,7 @@ export default function Home() {
             <div className="lg:w-1/2 relative">
               <div className="relative aspect-[1.1] rounded-[2.5rem] overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
                 <Image
-                    src="/12.png"
+                    src="/Ghib-min.png"
                     alt="Web Developer Illustration"
                     fill
                     className="object-cover"
