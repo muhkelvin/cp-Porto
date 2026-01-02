@@ -18,55 +18,62 @@ export default function About() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
-          {/* Image */}
-          <div className="lg:w-1/2 w-full">
-            <div className="relative w-full aspect-square rounded-2xl overflow-hidden shadow-lg">
-              <Image
-                src="/Ghib.png"
-                alt="Muhammad Kelvin - Freelance Web Developer"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
+  <div className="flex flex-col lg:flex-row items-center gap-12">
+    
+    {/* Video */}
+    <div className="lg:w-1/2 w-full">
+      <div className="relative w-full aspect-square rounded-2xl overflow-hidden shadow-lg">
+        <iframe
+          src="https://www.youtube.com/embed/GZQj7-XP0IQ"
+          title="Muhammad Kelvin - Freelance Web Developer"
+          className="absolute inset-0 w-full h-full"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        />
+      </div>
+    </div>
 
-          {/* Text Content */}
-          <div className="lg:w-1/2 space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold text-emerald-700">
-              Tentang Saya
-            </h1>
+    {/* Text Content */}
+    <div className="lg:w-1/2 space-y-6">
+      <h1 className="text-4xl md:text-5xl font-bold text-emerald-700">
+        Tentang Saya
+      </h1>
 
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Halo, saya <strong className="text-emerald-700">Muhammad Kelvin</strong> <strong>Web Developer freelance yang fokus membantu UMKM dan bisnis lokal hadir profesional di dunia digital.</strong>. 
-              
-            </p>
+      <p className="text-lg text-gray-700 leading-relaxed">
+        Halo, saya <strong className="text-emerald-700">Muhammad Kelvin</strong>{' '}
+        <strong>
+          Web Developer freelance yang fokus membantu UMKM dan bisnis lokal hadir profesional di dunia digital.
+        </strong>
+      </p>
 
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Saya percaya setiap bisnis, sekecil apapun, berhak tampil kredibel secara online. 
-              Website bukan sekadar tampilan — tapi fondasi digital untuk tumbuh dan dikenal pelanggan baru.
-            </p>
+      <p className="text-lg text-gray-700 leading-relaxed">
+        Saya percaya setiap bisnis, sekecil apapun, berhak tampil kredibel secara online.
+        Website bukan sekadar tampilan — tapi fondasi digital untuk tumbuh dan dikenal pelanggan baru.
+      </p>
 
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Dengan pendekatan personal, saya memastikan setiap project dikembangkan sesuai kebutuhan Anda, bukan template massal. 
-              Saya bekerja langsung dengan klien agar hasilnya efisien, clean, dan siap scaling.
-            </p>
+      <p className="text-lg text-gray-700 leading-relaxed">
+        Dengan pendekatan personal, saya memastikan setiap project dikembangkan sesuai kebutuhan Anda,
+        bukan template massal. Saya bekerja langsung dengan klien agar hasilnya efisien, clean, dan siap scaling.
+      </p>
 
-            <div className="pt-4">
-              <p className="text-lg font-semibold text-emerald-700 mb-3">
-                Prinsip Kerja Saya:
-              </p>
-              <div className="space-y-2 text-gray-700">
-                <p><span className="text-emerald-600">✓</span> <strong>Transparansi</strong> — Harga jelas, timeline realistis, tanpa biaya tersembunyi.</p>
-                <p><span className="text-emerald-600">✓</span> <strong>Responsif</strong> — Komunikasi langsung via WhatsApp, update rutin.</p>
-                <p><span className="text-emerald-600">✓</span> <strong>Kualitas Kode</strong> — Clean code, aman, dan mudah dikembangkan.</p>
-                <p><span className="text-emerald-600">✓</span> <strong>Fokus pada Hasil</strong> — Design yang cepat, mobile-first, dan SEO-friendly.</p>
-                <p><span className="text-emerald-600">✓</span> <strong>Support Pasca-Project</strong> — Bantuan 30 hari dan dokumentasi lengkap.</p>
-              </div>
-            </div>
-          </div>
+      <div className="pt-4">
+        <p className="text-lg font-semibold text-emerald-700 mb-3">
+          Prinsip Kerja Saya:
+        </p>
+        <div className="space-y-2 text-gray-700">
+          <p><span className="text-emerald-600">✓</span> <strong>Transparansi</strong> — Harga jelas, timeline realistis, tanpa biaya tersembunyi.</p>
+          <p><span className="text-emerald-600">✓</span> <strong>Responsif</strong> — Komunikasi langsung via WhatsApp, update rutin.</p>
+          <p><span className="text-emerald-600">✓</span> <strong>Kualitas Kode</strong> — Clean code, aman, dan mudah dikembangkan.</p>
+          <p><span className="text-emerald-600">✓</span> <strong>Fokus pada Hasil</strong> — Design yang cepat, mobile-first, dan SEO-friendly.</p>
+          <p><span className="text-emerald-600">✓</span> <strong>Support Pasca-Project</strong> — Bantuan 30 hari dan dokumentasi lengkap.</p>
         </div>
-      </section>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
       {/* Why Freelancer Section */}
       <section className="py-20 bg-emerald-50">
