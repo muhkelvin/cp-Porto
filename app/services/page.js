@@ -8,7 +8,7 @@ import {
     FiFileText,
 } from 'react-icons/fi';
 
-// Services Data - Fokus 4 Layanan Utama
+// Services Data - FIXED: Tambah array services yang missing
 const services = [
     {
         icon: <FiLayout className="w-10 h-10 text-emerald-600" />,
@@ -36,146 +36,131 @@ const services = [
     },
 ];
 
-// Pricing Packages - Updated
+// Pricing Packages
 const pricingPackages = [
     {
-        name: 'Paket Starter',
-        subtitle: 'Landing Page',
-        description: 'Perfect untuk UMKM yang baru mulai go digital atau butuh website sederhana',
-        price: 'Rp 1.500.000',
+        name: 'Paket Express',
+        subtitle: 'Landing Page Simple',
+        description: 'Untuk yang butuh cepat & budget terbatas',
+        price: 'Rp 600.000',
+        strikePrice: 'Rp 1.200.000',
         features: [
-            'Landing page 1 halaman',
-            'Responsive design (mobile-friendly)',
-            '4-6 section konten',
-            'Form kontak + email notification',
-            'WhatsApp floating button',
-            'Loading speed optimization',
-            'Basic SEO + Meta tags',
-            'Google Analytics setup',
-            'SSL certificate (HTTPS)',
-            '2x revisi design',
-            'Tutorial cara update konten',
-            'Free support 30 hari',
+            '1 halaman landing page responsive',
+            '3-4 section (Hero, Features, CTA, Footer)',
+            'Design pakai template premium (custom warna/logo)',
+            'Form kontak sederhana',
+            'WhatsApp button',
+            'Mobile friendly',
+            '1x revisi minor',
+            'Selesai 3-5 hari kerja',
         ],
-        timeline: '1-2 minggu',
-        badge: null,
-        note: 'Domain & hosting setup dibantu (biaya terpisah ~Rp 300-500rb/tahun)'
+        timeline: '3-5 hari',
+        limitations: [
+            'Tidak termasuk copywriting (konten dari client)',
+            'Tidak ada SEO optimization',
+            'Support 7 hari saja',
+        ],
+        badge: 'Budget Friendly',
+    },
+    {
+        name: 'Paket Starter',
+        subtitle: 'Landing Page Pro',
+        description: 'Landing page dengan optimasi & konversi lebih baik',
+        price: 'Rp 1.200.000',
+        strikePrice: 'Rp 2.000.000',
+        features: [
+            '1 halaman landing page custom design',
+            '5-6 section lengkap',
+            'Form kontak + email notifikasi',
+            'WhatsApp floating button',
+            'Google Analytics setup',
+            'Basic SEO (meta tags, sitemap)',
+            'Loading speed optimization',
+            'Mobile & desktop responsive',
+            '2x revisi design',
+            'Bantuan upload ke hosting',
+            'Support 14 hari',
+        ],
+        timeline: '7-10 hari',
+        badge: 'Most Popular',
+        note: 'Domain & hosting dibantu setup (biaya terpisah)'
     },
     {
         name: 'Paket Professional',
-        subtitle: 'Company Profile',
-        description: 'Untuk bisnis yang ingin tampil lebih lengkap dan profesional',
-        price: 'Rp 3.000.000',
+        subtitle: 'Multi-Page Website',
+        description: 'Company profile lengkap untuk bisnis profesional',
+        price: 'Rp 2.200.000',
+        strikePrice: 'Rp 3.500.000',
         features: [
-            'Website multi-page (hingga 6 halaman)',
-            'Homepage + About + Services + Portfolio + Contact',
-            'Blog/artikel section (CMS ready)',
-            'Admin panel untuk update konten',
-            'Contact form + email notification',
-            'Google Maps integration',
-            'SEO optimization + Sitemap XML',
+            '4-5 halaman (Home, About, Services, Portfolio, Contact)',
+            'Custom design profesional',
+            'Blog section dengan CMS sederhana',
+            'Contact form + Google Maps',
+            'SEO optimization per halaman',
             'Google Analytics + Facebook Pixel',
             'Social media integration',
             'WhatsApp chat widget',
-            'Free domain .com/.id (1 tahun)',
-            'Shared hosting (1 tahun)',
-            '3 email domain (@namausaha.com)',
+            'Admin panel untuk update konten',
             '3x revisi design',
             'Video tutorial lengkap',
-            'Free support & minor update 1 bulan',
+            'Support 30 hari',
         ],
-        timeline: '3-4 minggu',
-        badge: 'Most Popular',
+        timeline: '2-3 minggu',
+        badge: 'Best Value',
     },
     {
         name: 'Paket Business',
         subtitle: 'Katalog Digital',
-        description: 'Solusi katalog produk online dengan order via WhatsApp',
-        price: 'Rp 5.500.000',
+        description: 'Website katalog produk + order system',
+        price: 'Rp 4.000.000',
+        strikePrice: 'Rp 6.500.000',
         features: [
-            'Website dengan katalog produk (unlimited)',
-            'Custom design premium',
-            'Product management system',
+            'Katalog produk (unlimited)',
+            'Shopping cart + order via WhatsApp',
+            'Admin panel untuk kelola produk',
             'Kategori & filter produk',
             'Product detail page',
-            'Order via WhatsApp (keranjang belanja)',
-            'Homepage + Shop + Product + About + Contact',
+            'SEO optimization',
             'Blog section',
-            'Admin panel advanced',
-            'SEO optimization per halaman',
-            'Google Analytics + Facebook Pixel',
-            'Social media integration',
-            'Free domain .com/.id (1 tahun)',
-            'Shared hosting (1 tahun)',
-            '5 email domain',
-            'Unlimited revisi selama development',
-            'Video tutorial lengkap',
-            '2 bulan free support & maintenance',
+            'Analytics tracking',
+            '3x revisi design',
+            'Tutorial admin panel',
+            'Support 45 hari',
         ],
-        timeline: '4-6 minggu',
-        badge: 'Best Value',
-        note: 'Untuk E-Commerce dengan payment gateway, mulai dari Rp 8jt (konsultasi dulu)'
-    },
-    {
-        name: 'Paket Custom',
-        subtitle: 'Custom Web Application',
-        description: 'Butuh website dengan fitur khusus atau sistem yang lebih kompleks?',
-        price: 'Mulai Rp 7.000.000',
-        features: [
-            'Web application custom',
-            'Sistem booking/reservasi online',
-            'Member portal dengan login system',
-            'Multi-language website',
-            'Payment gateway integration',
-            'Custom dashboard & reporting',
-            'API integration',
-            'Dan fitur custom lainnya',
-            'Konsultasi & requirement gathering',
-            'Proposal teknis + timeline detail',
-            'Development sesuai agreement',
-            'Testing & quality assurance',
-            'Documentation lengkap',
-            'Training & handover',
-        ],
-        timeline: 'Timeline & harga disesuaikan',
-        badge: null,
+        timeline: '3-4 minggu',
+        badge: 'For UMKM',
     },
 ];
 
-// Add-On Services
+// Add-ons yang masuk akal
 const addOnServices = [
     {
+        icon: '✍️',
+        title: 'Copywriting Service',
+        price: 'Rp 300rb',
+        desc: 'Gue buatin konten landing page yang converting (headline, CTA, dll)',
+        features: ['Headline menarik', 'CTA yang converting', 'Product description', 'SEO-friendly copy']
+    },
+    {
+        icon: '📸',
+        title: 'Stock Photo Premium',
+        price: 'Rp 200rb',
+        desc: 'Akses foto premium dari Unsplash Pro / Pexels untuk website',
+        features: ['10+ foto premium', 'HD quality', 'Sesuai tema bisnis', 'Licensed properly']
+    },
+    {
         icon: '🔧',
-        title: 'Website Maintenance',
-        price: 'Rp 500rb/bulan',
-        features: [
-            'Update konten rutin',
-            'Backup mingguan',
-            'Security monitoring',
-            'Priority support',
-        ]
+        title: 'Maintenance',
+        price: 'Rp 250rb/bulan',
+        desc: 'Update konten, backup, security check, priority support',
+        features: ['Update konten 2x/bulan', 'Weekly backup', 'Security check', 'Priority WA support']
     },
     {
         icon: '📈',
-        title: 'SEO Optimization',
-        price: 'Rp 1.5jt (one-time)',
-        features: [
-            'Keyword research',
-            'On-page SEO',
-            'Speed optimization',
-            'Search Console setup',
-        ]
-    },
-    {
-        icon: '🎨',
-        title: 'Redesign Website',
-        price: 'Mulai Rp 2jt',
-        features: [
-            'Refresh tampilan lama',
-            'Mobile optimization',
-            'UX improvement',
-            'Modern design trends',
-        ]
+        title: 'SEO Boost',
+        price: 'Rp 750rb',
+        desc: 'Keyword research, on-page SEO, speed optimization, Search Console',
+        features: ['Keyword research', 'On-page SEO', 'Speed optimization', 'Google Search Console']
     },
 ];
 
@@ -303,6 +288,9 @@ export default function Services() {
                                     
                                     {/* Price */}
                                     <div className="bg-gradient-to-r from-emerald-50 to-emerald-100 rounded-lg p-4">
+                                        {plan.strikePrice && (
+                                            <div className="text-sm text-gray-500 line-through mb-1">{plan.strikePrice}</div>
+                                        )}
                                         <div className="text-3xl font-bold text-emerald-700">{plan.price}</div>
                                         <div className="text-gray-600 text-xs mt-1">Timeline: {plan.timeline}</div>
                                     </div>
@@ -319,6 +307,16 @@ export default function Services() {
                                         </li>
                                     ))}
                                 </ul>
+
+                                {/* Limitations (untuk Paket Express) */}
+                                {plan.limitations && (
+                                    <div className="mb-4 p-3 bg-amber-50 border border-amber-200 rounded-lg">
+                                        <p className="text-xs font-semibold text-amber-800 mb-2">⚠️ Catatan:</p>
+                                        {plan.limitations.map((l, i) => (
+                                            <p key={i} className="text-xs text-amber-700 mb-1">• {l}</p>
+                                        ))}
+                                    </div>
+                                )}
 
                                 {/* Note */}
                                 {plan.note && (
@@ -363,7 +361,7 @@ export default function Services() {
                     title="Layanan Tambahan" 
                     subtitle="Tingkatkan performa website Anda dengan layanan add-on" 
                 />
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {addOnServices.map((addon, i) => (
                         <motion.div
                             key={i}
@@ -372,7 +370,8 @@ export default function Services() {
                         >
                             <div className="text-4xl mb-3">{addon.icon}</div>
                             <h3 className="text-xl font-bold text-gray-800 mb-2">{addon.title}</h3>
-                            <p className="text-2xl font-bold text-emerald-600 mb-4">{addon.price}</p>
+                            <p className="text-2xl font-bold text-emerald-600 mb-2">{addon.price}</p>
+                            <p className="text-sm text-gray-600 mb-4">{addon.desc}</p>
                             <ul className="space-y-2">
                                 {addon.features.map((f, idx) => (
                                     <li key={idx} className="flex items-start text-sm text-gray-700">
