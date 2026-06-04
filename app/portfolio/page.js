@@ -2,7 +2,21 @@
 import { useState } from 'react'
 import Image from 'next/image'
 
-const categories = ['All', 'Company Profile', 'Landing Page', 'Blog/Magazine', 'Custom Website', 'CMS']
+const categories = [
+    'All',
+    'Landing Page',
+    'Company Profile',
+    'Blog/Content',
+    'E-Commerce',
+    'CMS',
+    'Web App/Dashboard',
+    'Portal/Marketplace',
+    'SaaS',
+    'ERP',
+    'Community/Forum',
+    'API/Backend',
+    'PWA',
+]
 
 const projects = [
     // {
@@ -35,7 +49,7 @@ const projects = [
     // },
     {
         title: 'Website Property LuxeLiving',
-        category: 'Custom Website',
+        category: 'Company Profile',
         description: 'Website perusahaan dengan fitur lengkap untuk showcase produk dan layanan',
         image: 'https://images.unsplash.com/photo-1626178793926-22b28830aa30?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3',
         external: 'https://cp-estate.vercel.app/'
@@ -49,7 +63,7 @@ const projects = [
     },
     {
         title: 'Blog Magazine',
-        category: 'Blog/Magazine',
+        category: 'Blog/Content',
         description: 'Platform blog modern dengan integrasi media sosial',
         image: 'https://picsum.photos/600/400?random=13',
         external: '#' // tambahkan link jika ada
@@ -100,8 +114,11 @@ export default function Portfolio() {
             ? projects
             : projects.filter(p => p.category === selectedCategory)
 
+
+
     return (
         <div className="min-h-screen bg-white">
+
             {/* Filter Section */}
             <section className="pt-32 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                 <h1 className="text-4xl md:text-5xl font-serif text-gray-800 text-center mb-8">
@@ -114,8 +131,8 @@ export default function Portfolio() {
                             onClick={() => setSelectedCategory(cat)}
                             className={`px-5 py-2 rounded-full font-medium transition 
                 ${selectedCategory === cat
-                                ? 'bg-green-600 text-white'
-                                : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+                                    ? 'bg-green-600 text-white'
+                                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
                         >
                             {cat}
                         </button>
