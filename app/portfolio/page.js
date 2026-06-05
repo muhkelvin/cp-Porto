@@ -14,7 +14,6 @@ const categories = [
     'SaaS',
     'ERP',
     'Community/Forum',
-    'API/Backend',
     'PWA',
 ]
 
@@ -47,6 +46,48 @@ const projects = [
     //     image: 'https://picsum.photos/600/400?random=24',
     //     external: 'https://workout-plan-mnljz9t3r-muhkelvinms-projects.vercel.app'
     // },
+    {
+        title: 'Lumière Skincare Serum',
+        category: 'Landing Page',
+        description: 'Landing page mewah, bersih, dan bergaya editorial untuk produk serum skincare premium.',
+        image: 'https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?q=80&w=1470&auto=format&fit=crop',
+        external: 'https://landing-page-collection-indol.vercel.app/lumiere'
+    },
+    {
+        title: 'Brewly Coffee Subscription',
+        category: 'Landing Page',
+        description: 'Landing page hangat, kasual (lifestyle), dan nyaman (cozy) untuk layanan langganan kopi.',
+        image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1470&auto=format&fit=crop',
+        external: 'https://landing-page-collection-indol.vercel.app/brewly'
+    },
+    {
+        title: 'Wearbase Korean Fashion',
+        category: 'Landing Page',
+        description: 'Landing page kasual, berani, dan bertema streetwear untuk koleksi fashion Korea yang trendi.',
+        image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=1470&auto=format&fit=crop',
+        external: 'https://landing-page-collection-indol.vercel.app/wearbase'
+    },
+    {
+        title: 'Fitframe Personal Trainer',
+        category: 'Landing Page',
+        description: 'Landing page energik, sporty, dan bertema gelap (dark mode) untuk pemesanan personal trainer.',
+        image: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1470&auto=format&fit=crop',
+        external: 'https://landing-page-collection-indol.vercel.app/fitframe'
+    },
+    {
+        title: 'Skillshift Online Course',
+        category: 'Landing Page',
+        description: 'Landing page modern, bernuansa teknologi, dan minimalis untuk kursus online.',
+        image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1470&auto=format&fit=crop',
+        external: 'https://landing-page-collection-indol.vercel.app/skillshift'
+    },
+    {
+        title: 'Cozify Candle & Diffuser',
+        category: 'Landing Page',
+        description: 'Landing page lembut, estetis, dan feminin yang menampilkan lilin aromaterapi & diffuser.',
+        image: 'https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=1470&auto=format&fit=crop',
+        external: 'https://landing-page-collection-indol.vercel.app/cozify'
+    },
     {
         title: 'Website Property LuxeLiving',
         category: 'Company Profile',
