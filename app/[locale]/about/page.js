@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { useTranslations } from 'next-intl';
 
 const skills = [
   { name: 'HTML/CSS', level: 95 },
@@ -14,6 +15,10 @@ const skills = [
 ];
 
 export default function About() {
+  const t = useTranslations('About');
+  const principles = t.raw('principles');
+  const whyList = t.raw('whyList');
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -37,36 +42,27 @@ export default function About() {
     {/* Text Content */}
     <div className="lg:w-1/2 space-y-6">
       <h1 className="text-4xl md:text-5xl font-bold text-emerald-700">
-        Tentang Saya
+        {t('title')}
       </h1>
 
+      <p className="text-lg text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: t('p1') }} />
+
       <p className="text-lg text-gray-700 leading-relaxed">
-        Halo, saya <strong className="text-emerald-700">Muhammad Kelvin</strong>{' '}
-        <strong>
-          Web Developer freelance yang fokus membantu UMKM dan bisnis lokal hadir profesional di dunia digital.
-        </strong>
+        {t('p2')}
       </p>
 
       <p className="text-lg text-gray-700 leading-relaxed">
-        Saya percaya setiap bisnis, sekecil apapun, berhak tampil kredibel secara online.
-        Website bukan sekadar tampilan — tapi fondasi digital untuk tumbuh dan dikenal pelanggan baru.
-      </p>
-
-      <p className="text-lg text-gray-700 leading-relaxed">
-        Dengan pendekatan personal, saya memastikan setiap project dikembangkan sesuai kebutuhan Anda,
-        bukan template massal. Saya bekerja langsung dengan klien agar hasilnya efisien, clean, dan siap scaling.
+        {t('p3')}
       </p>
 
       <div className="pt-4">
         <p className="text-lg font-semibold text-emerald-700 mb-3">
-          Prinsip Kerja Saya:
+          {t('principlesTitle')}
         </p>
         <div className="space-y-2 text-gray-700">
-          <p><span className="text-emerald-600">✓</span> <strong>Transparansi</strong> — Harga jelas, timeline realistis, tanpa biaya tersembunyi.</p>
-          <p><span className="text-emerald-600">✓</span> <strong>Responsif</strong> — Komunikasi langsung via WhatsApp, update rutin.</p>
-          <p><span className="text-emerald-600">✓</span> <strong>Kualitas Kode</strong> — Clean code, aman, dan mudah dikembangkan.</p>
-          <p><span className="text-emerald-600">✓</span> <strong>Fokus pada Hasil</strong> — Design yang cepat, mobile-first, dan SEO-friendly.</p>
-          <p><span className="text-emerald-600">✓</span> <strong>Support Pasca-Project</strong> — Bantuan 30 hari dan dokumentasi lengkap.</p>
+          {principles.map((item, i) => (
+             <p key={i}><span className="text-emerald-600">✓</span> <strong>{item.title}</strong> — {item.desc}</p>
+          ))}
         </div>
       </div>
     </div>
@@ -79,28 +75,11 @@ export default function About() {
       <section className="py-20 bg-emerald-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-emerald-700 text-center mb-12">
-            Kenapa Memilih Freelancer?
+            {t('whyTitle')}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[
-              {
-                title: 'Langsung dengan yang Mengerjakan',
-                desc: 'Tanpa perantara sales atau manajer. Anda berkomunikasi langsung dengan saya yang membangun website dari awal sampai online.',
-              },
-              {
-                title: 'Harga Lebih Efisien',
-                desc: 'Tanpa biaya operasional besar seperti agency. Hasil tetap profesional, harga tetap masuk akal untuk UMKM.',
-              },
-              {
-                title: 'Komunikasi Cepat & Fleksibel',
-                desc: 'Respon cepat via WhatsApp. Revisi dan feedback ditangani langsung tanpa birokrasi panjang.',
-              },
-              {
-                title: 'Kualitas di Atas Kuantitas',
-                desc: 'Saya hanya mengambil project yang bisa saya tangani secara maksimal — setiap website dikerjakan dengan detail.',
-              },
-            ].map((item, i) => (
+            {whyList.map((item, i) => (
               <div key={i} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
                 <h3 className="text-xl font-semibold text-emerald-700 mb-3">{item.title}</h3>
                 <p className="text-gray-700">{item.desc}</p>
@@ -114,10 +93,10 @@ export default function About() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-emerald-700 text-center mb-4">
-            Tech Stack & Keahlian
+            {t('techTitle')}
           </h2>
           <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto">
-            Tools dan teknologi yang saya gunakan untuk membangun website yang cepat, aman, dan mudah dikembangkan.
+            {t('techDesc')}
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -139,7 +118,7 @@ export default function About() {
 
           <div className="mt-12 text-center">
             <p className="text-gray-700 text-sm">
-              <strong>Tools tambahan:</strong> Figma, Adobe XD, GitHub, Google Analytics, Notion, VS Code
+              {t('techTools')}
             </p>
           </div>
         </div>
@@ -149,10 +128,10 @@ export default function About() {
       <section className="py-20 bg-emerald-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-emerald-700 mb-6">
-            Siap Go Digital Sekarang?
+            {t('ctaTitle')}
           </h2>
           <p className="text-gray-700 mb-8 text-lg max-w-2xl mx-auto">
-            Ayo diskusi santai dulu tentang kebutuhan website kamu. Konsultasi gratis — tanpa tekanan, tanpa komitmen.
+            {t('ctaDesc')}
           </p>
           <a
             href="https://api.whatsapp.com/send/?phone=6289526323412&text=Halo%20Kelvin,%20saya%20tertarik%20untuk%20konsultasi%20tentang%20pembuatan%20website.%20Boleh%20diskusi%3F&type=phone_number&app_absent=0"
@@ -160,10 +139,10 @@ export default function About() {
             rel="noopener noreferrer"
             className="inline-block bg-emerald-600 text-white px-8 py-4 rounded-md hover:bg-emerald-700 transition text-lg font-medium"
           >
-            💬 Chat via WhatsApp
+            {t('ctaBtn')}
           </a>
           <p className="mt-4 text-sm text-gray-600">
-            Response time: &lt; 2 jam 
+            {t('ctaResp')} 
           </p>
         </div>
       </section>

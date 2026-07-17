@@ -7,215 +7,7 @@ import {
     FiShoppingCart,
     FiFileText,
 } from 'react-icons/fi';
-
-// Services Data - FIXED: Tambah array services yang missing
-const services = [
-    {
-        icon: <FiLayout className="w-10 h-10 text-emerald-600" />,
-        title: 'Landing Page',
-        desc: 'Website satu halaman untuk promosi produk/jasa dengan desain konversi tinggi',
-        bestFor: 'Product launch, promo event, lead generation'
-    },
-    {
-        icon: <FiBriefcase className="w-10 h-10 text-emerald-600" />,
-        title: 'Company Profile',
-        desc: 'Website multi-halaman untuk profil bisnis dengan portfolio & layanan lengkap',
-        bestFor: 'Perusahaan, konsultan, studio/agency'
-    },
-    {
-        icon: <FiShoppingCart className="w-10 h-10 text-emerald-600" />,
-        title: 'Katalog Digital',
-        desc: 'Katalog produk online dengan sistem order via WhatsApp',
-        bestFor: 'UMKM, toko retail, distributor'
-    },
-    {
-        icon: <FiFileText className="w-10 h-10 text-emerald-600" />,
-        title: 'Website + Blog',
-        desc: 'Website dengan CMS untuk posting artikel dan content marketing',
-        bestFor: 'Personal brand, media, content creator'
-    },
-];
-
-// Pricing Packages
-const pricingPackages = [
-    {
-        name: 'Paket Express',
-        subtitle: 'Landing Page Simple',
-        description: 'Untuk yang butuh cepat & budget terbatas',
-        price: 'Rp 600.000',
-        strikePrice: 'Rp 1.200.000',
-        features: [
-            '1 halaman landing page responsive',
-            '3-4 section (Hero, Features, CTA, Footer)',
-            'Design pakai template premium (custom warna/logo)',
-            'Form kontak sederhana',
-            'WhatsApp button',
-            'Mobile friendly',
-            '1x revisi minor',
-            'Selesai 3-5 hari kerja',
-        ],
-        timeline: '3-5 hari',
-        limitations: [
-            'Tidak termasuk copywriting (konten dari client)',
-            'Tidak ada SEO optimization',
-            'Support 7 hari saja',
-        ],
-        badge: 'Budget Friendly',
-    },
-    {
-        name: 'Paket Starter',
-        subtitle: 'Landing Page Pro',
-        description: 'Landing page dengan optimasi & konversi lebih baik',
-        price: 'Rp 1.200.000',
-        strikePrice: 'Rp 2.000.000',
-        features: [
-            '1 halaman landing page custom design',
-            '5-6 section lengkap',
-            'Form kontak + email notifikasi',
-            'WhatsApp floating button',
-            'Google Analytics setup',
-            'Basic SEO (meta tags, sitemap)',
-            'Loading speed optimization',
-            'Mobile & desktop responsive',
-            '2x revisi design',
-            'Bantuan upload ke hosting',
-            'Support 14 hari',
-        ],
-        timeline: '7-10 hari',
-        badge: 'Most Popular',
-        note: 'Domain & hosting dibantu setup (biaya terpisah)'
-    },
-    {
-        name: 'Paket Professional',
-        subtitle: 'Multi-Page Website',
-        description: 'Company profile lengkap untuk bisnis profesional',
-        price: 'Rp 2.200.000',
-        strikePrice: 'Rp 3.500.000',
-        features: [
-            '4-5 halaman (Home, About, Services, Portfolio, Contact)',
-            'Custom design profesional',
-            'Blog section dengan CMS sederhana',
-            'Contact form + Google Maps',
-            'SEO optimization per halaman',
-            'Google Analytics + Facebook Pixel',
-            'Social media integration',
-            'WhatsApp chat widget',
-            'Admin panel untuk update konten',
-            '3x revisi design',
-            'Video tutorial lengkap',
-            'Support 30 hari',
-        ],
-        timeline: '2-3 minggu',
-        badge: 'Best Value',
-    },
-    {
-        name: 'Paket Business',
-        subtitle: 'Katalog Digital',
-        description: 'Website katalog produk + order system',
-        price: 'Rp 4.000.000',
-        strikePrice: 'Rp 6.500.000',
-        features: [
-            'Katalog produk (unlimited)',
-            'Shopping cart + order via WhatsApp',
-            'Admin panel untuk kelola produk',
-            'Kategori & filter produk',
-            'Product detail page',
-            'SEO optimization',
-            'Blog section',
-            'Analytics tracking',
-            '3x revisi design',
-            'Tutorial admin panel',
-            'Support 45 hari',
-        ],
-        timeline: '3-4 minggu',
-        badge: 'For UMKM',
-    },
-];
-
-// Add-ons yang masuk akal
-const addOnServices = [
-    {
-        icon: '✍️',
-        title: 'Copywriting Service',
-        price: 'Rp 300rb',
-        desc: 'Gue buatin konten landing page yang converting (headline, CTA, dll)',
-        features: ['Headline menarik', 'CTA yang converting', 'Product description', 'SEO-friendly copy']
-    },
-    {
-        icon: '📸',
-        title: 'Stock Photo Premium',
-        price: 'Rp 200rb',
-        desc: 'Akses foto premium dari Unsplash Pro / Pexels untuk website',
-        features: ['10+ foto premium', 'HD quality', 'Sesuai tema bisnis', 'Licensed properly']
-    },
-    {
-        icon: '🔧',
-        title: 'Maintenance',
-        price: 'Rp 250rb/bulan',
-        desc: 'Update konten, backup, security check, priority support',
-        features: ['Update konten 2x/bulan', 'Weekly backup', 'Security check', 'Priority WA support']
-    },
-    {
-        icon: '📈',
-        title: 'SEO Boost',
-        price: 'Rp 750rb',
-        desc: 'Keyword research, on-page SEO, speed optimization, Search Console',
-        features: ['Keyword research', 'On-page SEO', 'Speed optimization', 'Google Search Console']
-    },
-];
-
-// Standard Features - Updated
-const standardFeatures = [
-    'Responsive Design (Mobile-Friendly)',
-    'Fast Loading Speed (< 3 detik)',
-    'SEO-Friendly Structure',
-    'SSL Certificate (HTTPS)',
-    'WhatsApp Integration',
-    'Google Analytics',
-    'Contact Form',
-    'Social Media Links',
-    'Browser Compatible',
-    'Backup Setup',
-    'Documentation & Tutorial',
-];
-
-// What's NOT Included
-const notIncluded = [
-    'Copywriting/penulisan konten (bisa dibantu dengan fee tambahan)',
-    'Foto produk/professional photography',
-    'Logo design (jika belum punya)',
-    'Biaya perpanjangan domain/hosting tahun ke-2',
-    'Update konten rutin setelah masa support habis',
-];
-
-// Process Steps
-const processSteps = [
-    { 
-        step: 1, 
-        title: 'Konsultasi & Briefing', 
-        desc: 'Kita diskusi kebutuhan, goals, dan budget Anda. Saya riset kompetitor & target market' 
-    },
-    { 
-        step: 2, 
-        title: 'Proposal & Planning', 
-        desc: 'Saya kirim proposal detail dengan timeline, deliverables, dan wireframe/mockup awal' 
-    },
-    { 
-        step: 3, 
-        title: 'Development', 
-        desc: 'Saya mulai kerjakan project dengan update berkala. Anda bisa request revisi di setiap milestone' 
-    },
-    { 
-        step: 4, 
-        title: 'Review & Testing', 
-        desc: 'Anda review hasil kerja dan saya pastikan semuanya berfungsi sempurna di semua device' 
-    },
-    { 
-        step: 5, 
-        title: 'Launch & Support', 
-        desc: 'Project go live! Saya berikan tutorial dan free support 30 hari' 
-    },
-];
+import { useTranslations } from 'next-intl';
 
 // Components
 const SectionTitle = ({ title, subtitle }) => (
@@ -225,7 +17,7 @@ const SectionTitle = ({ title, subtitle }) => (
     </div>
 );
 
-const ServicesGrid = () => (
+const ServicesGrid = ({ services }) => (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {services.map((s, i) => (
             <motion.div
@@ -245,23 +37,43 @@ const ServicesGrid = () => (
 );
 
 export default function Services() {
+    const t = useTranslations('ServicesPage');
+    
+    const rawServices = t.raw('services');
+    const icons = [
+        <FiLayout key="1" className="w-10 h-10 text-emerald-600" />,
+        <FiBriefcase key="2" className="w-10 h-10 text-emerald-600" />,
+        <FiShoppingCart key="3" className="w-10 h-10 text-emerald-600" />,
+        <FiFileText key="4" className="w-10 h-10 text-emerald-600" />
+    ];
+    const services = rawServices.map((s, i) => ({ ...s, icon: icons[i] }));
+
+    const pricingPackages = t.raw('pricingPackages');
+    const rawAddOns = t.raw('addOnServices');
+    const addOnIcons = ['✍️', '📸', '🔧', '📈'];
+    const addOnServices = rawAddOns.map((a, i) => ({ ...a, icon: addOnIcons[i] }));
+    const standardFeatures = t.raw('standardFeatures');
+    const notIncluded = t.raw('notIncluded');
+    const processSteps = t.raw('processSteps');
+    const faqs = t.raw('faqs');
+
     return (
         <div className="space-y-24 pt-20">
             {/* Header */}
             <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                 <SectionTitle 
-                    title="Layanan Saya" 
-                    subtitle="Spesialisasi pembuatan website profesional untuk UMKM & Bisnis Lokal" 
+                    title={t('headerTitle')} 
+                    subtitle={t('headerSubtitle')} 
                 />
-                <ServicesGrid />
+                <ServicesGrid services={services} />
             </section>
 
             {/* Pricing Packages */}
             <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
                 <div className="max-w-7xl mx-auto px-4">
                     <SectionTitle 
-                        title="Paket & Harga" 
-                        subtitle="Pilih paket yang sesuai dengan kebutuhan dan budget Anda" 
+                        title={t('pricingTitle')} 
+                        subtitle={t('pricingSubtitle')} 
                     />
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -275,13 +87,13 @@ export default function Services() {
                             >
                                 {/* Badge */}
                                 {plan.badge && (
-                                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-emerald-600 text-white text-xs font-semibold px-4 py-1 rounded-full">
+                                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-emerald-600 text-white text-xs font-semibold px-4 py-1 rounded-full whitespace-nowrap">
                                         {plan.badge}
                                     </div>
                                 )}
                                 
                                 {/* Header */}
-                                <div className="text-center mb-6">
+                                <div className="text-center mb-6 mt-4">
                                     <h3 className="text-2xl font-bold text-gray-800 mb-1">{plan.name}</h3>
                                     <p className="text-sm text-emerald-600 font-medium mb-3">{plan.subtitle}</p>
                                     <p className="text-gray-600 text-sm leading-relaxed mb-4">{plan.description}</p>
@@ -311,7 +123,7 @@ export default function Services() {
                                 {/* Limitations (untuk Paket Express) */}
                                 {plan.limitations && (
                                     <div className="mb-4 p-3 bg-amber-50 border border-amber-200 rounded-lg">
-                                        <p className="text-xs font-semibold text-amber-800 mb-2">⚠️ Catatan:</p>
+                                        <p className="text-xs font-semibold text-amber-800 mb-2">{t('notePrefix')}</p>
                                         {plan.limitations.map((l, i) => (
                                             <p key={i} className="text-xs text-amber-700 mb-1">• {l}</p>
                                         ))}
@@ -332,7 +144,7 @@ export default function Services() {
                                     rel="noopener noreferrer"
                                     className="block text-center bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 rounded-lg transition"
                                 >
-                                    Pilih Paket Ini
+                                    {t('selectPackage')}
                                 </a>
                             </motion.div>
                         ))}
@@ -341,15 +153,15 @@ export default function Services() {
                     {/* Payment Info */}
                     <div className="mt-12 text-center space-y-3 bg-white p-6 rounded-lg shadow-md max-w-3xl mx-auto">
                         <p className="text-gray-700 font-semibold">
-                            💰 Sistem Pembayaran:
+                            {t('paymentTitle')}
                         </p>
                         <div className="text-gray-600 space-y-1">
-                            <p>▸ DP 50% untuk mulai project</p>
-                            <p>▸ 25% saat development selesai (untuk review)</p>
-                            <p>▸ 25% sisanya sebelum launch</p>
+                            <p>{t('payment1')}</p>
+                            <p>{t('payment2')}</p>
+                            <p>{t('payment3')}</p>
                         </div>
                         <p className="text-sm text-gray-500 pt-2">
-                            ✓ Transfer via BCA / Mandiri / QRIS • Invoice resmi setiap pembayaran
+                            {t('paymentNote')}
                         </p>
                     </div>
                 </div>
@@ -358,8 +170,8 @@ export default function Services() {
             {/* Add-On Services */}
             <section className="py-20 bg-white px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                 <SectionTitle 
-                    title="Layanan Tambahan" 
-                    subtitle="Tingkatkan performa website Anda dengan layanan add-on" 
+                    title={t('addonTitle')} 
+                    subtitle={t('addonSubtitle')} 
                 />
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {addOnServices.map((addon, i) => (
@@ -388,8 +200,8 @@ export default function Services() {
             {/* Standard Features */}
             <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto bg-gray-50">
                 <SectionTitle 
-                    title="Yang Pasti Anda Dapatkan" 
-                    subtitle="Fitur standar di setiap paket website yang saya kerjakan" 
+                    title={t('featuresTitle')} 
+                    subtitle={t('featuresSubtitle')} 
                 />
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {standardFeatures.map((feature, i) => (
@@ -406,7 +218,7 @@ export default function Services() {
                 {/* What's NOT Included */}
                 <div className="mt-12 bg-amber-50 border-2 border-amber-200 rounded-xl p-6 max-w-3xl mx-auto">
                     <h3 className="text-xl font-bold text-amber-800 mb-4 flex items-center gap-2">
-                        <span>⚠️</span> Yang TIDAK Termasuk:
+                        <span>⚠️</span> {t('notIncludedTitle')}
                     </h3>
                     <ul className="space-y-2">
                         {notIncluded.map((item, i) => (
@@ -423,8 +235,8 @@ export default function Services() {
             <section className="py-20 bg-white">
                 <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                     <SectionTitle 
-                        title="Cara Kerja Saya" 
-                        subtitle="Proses yang transparan dan terstruktur dari konsultasi hingga launch" 
+                        title={t('processTitle')} 
+                        subtitle={t('processSubtitle')} 
                     />
                     <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
                         {processSteps.map((p) => (
@@ -447,35 +259,10 @@ export default function Services() {
             {/* FAQ Section */}
             <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
                 <SectionTitle 
-                    title="Pertanyaan yang Sering Ditanya" 
+                    title={t('faqTitle')} 
                 />
                 <div className="space-y-6">
-                    {[
-                        {
-                            q: 'Berapa lama proses pembuatan website?',
-                            a: 'Tergantung paket: Landing page 1-2 minggu, Company profile 3-4 minggu, Katalog Digital 4-6 minggu, Custom 6-10 minggu.'
-                        },
-                        {
-                            q: 'Apakah saya bisa update website sendiri?',
-                            a: 'Bisa! Saya akan setup CMS yang user-friendly dan kasih tutorial lengkap. Anda bisa update konten tanpa perlu coding.'
-                        },
-                        {
-                            q: 'Bagaimana dengan revisi?',
-                            a: 'Setiap paket ada quota revisi. Paket Starter: 2x, Professional: 3x, Business: unlimited selama development.'
-                        },
-                        {
-                            q: 'Apakah ada garansi?',
-                            a: 'Ya, saya berikan free support 30 hari untuk bug fixing dan troubleshooting setelah launch.'
-                        },
-                        {
-                            q: 'Apakah include domain dan hosting?',
-                            a: 'Paket Professional dan Business include domain + hosting 1 tahun. Paket Starter dibantu setup (biaya terpisah ~Rp 300-500rb/tahun).'
-                        },
-                        {
-                            q: 'Bagaimana untuk E-Commerce dengan payment gateway?',
-                            a: 'Untuk e-commerce full dengan shopping cart dan payment gateway (Midtrans, dll), harga mulai dari Rp 8-10jt. Konsultasi dulu untuk diskusi detail.'
-                        },
-                    ].map((faq, i) => (
+                    {faqs.map((faq, i) => (
                         <div key={i} className="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:border-emerald-200 transition">
                             <h4 className="font-semibold text-gray-800 mb-2">Q: {faq.q}</h4>
                             <p className="text-gray-600">A: {faq.a}</p>
@@ -488,10 +275,10 @@ export default function Services() {
             <section className="py-20 bg-gradient-to-r from-emerald-600 to-emerald-700">
                 <div className="max-w-3xl mx-auto text-center px-4">
                     <h2 className="text-4xl font-bold text-white mb-4">
-                        Siap Memulai Project Website Anda?
+                        {t('ctaTitle')}
                     </h2>
                     <p className="text-white/90 text-lg mb-8 leading-relaxed">
-                        Jadwalkan konsultasi gratis sekarang. No pressure, no commitment—just a friendly chat about your needs.
+                        {t('ctaSubtitle')}
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a 
@@ -500,17 +287,17 @@ export default function Services() {
                             rel="noopener noreferrer"
                             className="inline-block bg-white text-emerald-600 font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition transform hover:scale-105"
                         >
-                            💬 Chat WhatsApp Sekarang
+                            {t('ctaChat')}
                         </a>
                         <a 
                             href="/portfolio" 
                             className="inline-block bg-emerald-500 text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:bg-emerald-400 transition"
                         >
-                            Lihat Portfolio
+                            {t('ctaPortfolio')}
                         </a>
                     </div>
                     <p className="mt-6 text-white/80 text-sm">
-                        Response time: &lt; 2 jam (Senin-Jumat, 09.00-18.00 WIB)
+                        {t('ctaResp')}
                     </p>
                 </div>
             </section>

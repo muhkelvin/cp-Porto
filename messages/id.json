@@ -1,0 +1,418 @@
+{
+  "Hero": {
+    "badge": "Hi! Saya Muhammad Kelvin 👋",
+    "title1": "Halo, Saya Kelvin",
+    "title2": "Saya Bantu Bisnis Anda Hadir Profesional",
+    "title3": "di Dunia Digital",
+    "description1": "Freelance Web Developer yang fokus membangun website fungsional, modern, dan terjangkau untuk UMKM & bisnis lokal.",
+    "description2": "Deal langsung dengan saya - dari konsultasi hingga website jadi.",
+    "cta1": "💬 Konsultasi Gratis",
+    "cta2": "Lihat Portfolio",
+    "trust1": "Response < 2 jam",
+    "trust2": "Harga Transparan",
+    "trust3": "Free Support 30 Hari"
+  },
+  "WhyFreelancer": {
+    "title": "Kenapa Pilih Freelancer?",
+    "subtitle": "Berbeda dengan agency besar - Anda dapat perhatian penuh dan harga yang lebih fair",
+    "item1Title": "Deal Langsung",
+    "item1Desc": "Chat langsung dengan yang ngerjain, tanpa middleman",
+    "item2Title": "Harga Terjangkau",
+    "item2Desc": "No markup agency, harga lebih fair untuk UMKM",
+    "item3Title": "Komunikasi Cepat",
+    "item3Desc": "Response via WhatsApp, revisi langsung ditangani",
+    "item4Title": "Quality Focus",
+    "item4Desc": "Fokus pada kualitas, bukan kuantitas project"
+  },
+  "Services": {
+    "title": "Apa yang Saya Tawarkan?",
+    "subtitle": "Website profesional yang tidak hanya bagus dilihat, tapi juga efektif untuk bisnis Anda",
+    "item1Title": "Landing Page",
+    "item1Desc": "Website satu halaman untuk promosi produk/jasa dengan konversi tinggi",
+    "item2Title": "Company Profile",
+    "item2Desc": "Website lengkap untuk profil perusahaan dengan portfolio & layanan",
+    "item3Title": "Katalog Produk",
+    "item3Desc": "Toko online atau katalog digital dengan sistem manajemen produk",
+    "item4Title": "Website + Blog",
+    "item4Desc": "Website dengan fitur blog untuk content marketing dan SEO",
+    "item5Title": "Custom Web App",
+    "item5Desc": "Solusi web khusus sesuai kebutuhan bisnis spesifik Anda",
+    "item6Title": "Maintenance",
+    "item6Desc": "Update rutin, backup, dan technical support untuk website Anda",
+    "link": "Lihat Detail Layanan & Harga"
+  },
+  "Features": {
+    "title": "Yang Pasti Anda Dapatkan",
+    "subtitle": "Fitur standar di setiap project website yang saya kerjakan"
+  },
+  "CTA": {
+    "title": "Siap Bawa Bisnis Anda Go Digital?",
+    "subtitle": "Jadwalkan konsultasi gratis sekarang. Kita diskusikan kebutuhan Anda tanpa komitmen - just a friendly chat about your goals.",
+    "button1": "💬 Chat WhatsApp Sekarang",
+    "button2": "Lihat Paket & Harga",
+    "note1": "No pressure, no commitment",
+    "note2": "- Konsultasi pertama gratis"
+  },
+  "Navbar": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "portfolio": "Portofolio",
+    "services": "Layanan",
+    "contact": "Kontak",
+    "consult": "Konsultasi Sekarang"
+  },
+  "Footer": {
+    "desc": "Spesialis dalam membangun website modern, responsif, dan SEO-friendly untuk UMKM & startup di Indonesia.",
+    "servicesTitle": "Layanan",
+    "webDev": "Pembuatan Website",
+    "companyTitle": "Perusahaan",
+    "about": "Tentang Saya",
+    "portfolio": "Portofolio",
+    "contactUs": "Hubungi Kami",
+    "contactTitle": "Kontak",
+    "location": "Lokasi: Online — Melayani seluruh Indonesia 🇮🇩",
+    "madeBy": "Dibuat ❤️ oleh"
+  },
+  "About": {
+    "title": "Tentang Saya",
+    "p1": "Halo, saya Muhammad Kelvin Web Developer freelance yang fokus membantu UMKM dan bisnis lokal hadir profesional di dunia digital.",
+    "p2": "Saya percaya setiap bisnis, sekecil apapun, berhak tampil kredibel secara online. Website bukan sekadar tampilan — tapi fondasi digital untuk tumbuh dan dikenal pelanggan baru.",
+    "p3": "Dengan pendekatan personal, saya memastikan setiap project dikembangkan sesuai kebutuhan Anda, bukan template massal. Saya bekerja langsung dengan klien agar hasilnya efisien, clean, dan siap scaling.",
+    "principlesTitle": "Prinsip Kerja Saya:",
+    "principles": [
+      {
+        "title": "Transparansi",
+        "desc": "Harga jelas, timeline realistis, tanpa biaya tersembunyi."
+      },
+      {
+        "title": "Responsif",
+        "desc": "Komunikasi langsung via WhatsApp, update rutin."
+      },
+      {
+        "title": "Kualitas Kode",
+        "desc": "Clean code, aman, dan mudah dikembangkan."
+      },
+      {
+        "title": "Fokus pada Hasil",
+        "desc": "Design yang cepat, mobile-first, dan SEO-friendly."
+      },
+      {
+        "title": "Support Pasca-Project",
+        "desc": "Bantuan 30 hari dan dokumentasi lengkap."
+      }
+    ],
+    "whyTitle": "Kenapa Memilih Freelancer?",
+    "whyList": [
+      {
+        "title": "Langsung dengan yang Mengerjakan",
+        "desc": "Tanpa perantara sales atau manajer. Anda berkomunikasi langsung dengan saya yang membangun website dari awal sampai online."
+      },
+      {
+        "title": "Harga Lebih Efisien",
+        "desc": "Tanpa biaya operasional besar seperti agency. Hasil tetap profesional, harga tetap masuk akal untuk UMKM."
+      },
+      {
+        "title": "Komunikasi Cepat & Fleksibel",
+        "desc": "Respon cepat via WhatsApp. Revisi dan feedback ditangani langsung tanpa birokrasi panjang."
+      },
+      {
+        "title": "Kualitas di Atas Kuantitas",
+        "desc": "Saya hanya mengambil project yang bisa saya tangani secara maksimal — setiap website dikerjakan dengan detail."
+      }
+    ],
+    "techTitle": "Tech Stack & Keahlian",
+    "techDesc": "Tools dan teknologi yang saya gunakan untuk membangun website yang cepat, aman, dan mudah dikembangkan.",
+    "techTools": "Tools tambahan: Figma, Adobe XD, GitHub, Google Analytics, Notion, VS Code",
+    "ctaTitle": "Siap Go Digital Sekarang?",
+    "ctaDesc": "Ayo diskusi santai dulu tentang kebutuhan website kamu. Konsultasi gratis — tanpa tekanan, tanpa komitmen.",
+    "ctaBtn": "💬 Chat via WhatsApp",
+    "ctaResp": "Response time: < 2 jam"
+  },
+  "Portfolio": {
+    "title": "Portfolio",
+    "btnSite": "Lihat Website",
+    "ctaTitle": "Ingin Melihat Lebih Banyak?",
+    "ctaDesc": "Hubungi saya untuk akses studi kasus lengkap dan detail teknis.",
+    "ctaBtn": "Request Case Study",
+    "categories": [
+      "All",
+      "Landing Page",
+      "Company Profile",
+      "Webite Application"
+    ]
+  },
+  "ServicesPage": {
+    "headerTitle": "Layanan Saya",
+    "headerSubtitle": "Spesialisasi pembuatan website profesional untuk UMKM & Bisnis Lokal",
+    "pricingTitle": "Paket & Harga",
+    "pricingSubtitle": "Pilih paket yang sesuai dengan kebutuhan dan budget Anda",
+    "addonTitle": "Layanan Tambahan",
+    "addonSubtitle": "Tingkatkan performa website Anda dengan layanan add-on",
+    "featuresTitle": "Yang Pasti Anda Dapatkan",
+    "featuresSubtitle": "Fitur standar di setiap paket website yang saya kerjakan",
+    "notIncludedTitle": "Yang TIDAK Termasuk:",
+    "processTitle": "Cara Kerja Saya",
+    "processSubtitle": "Proses yang transparan dan terstruktur dari konsultasi hingga launch",
+    "faqTitle": "Pertanyaan yang Sering Ditanya",
+    "ctaTitle": "Siap Memulai Project Website Anda?",
+    "ctaSubtitle": "Jadwalkan konsultasi gratis sekarang. No pressure, no commitment—just a friendly chat about your needs.",
+    "ctaChat": "💬 Chat WhatsApp Sekarang",
+    "ctaPortfolio": "Lihat Portfolio",
+    "ctaResp": "Response time: < 2 jam (Senin-Jumat, 09.00-18.00 WIB)",
+    "paymentTitle": "💰 Sistem Pembayaran:",
+    "payment1": "▸ DP 50% untuk mulai project",
+    "payment2": "▸ 25% saat development selesai (untuk review)",
+    "payment3": "▸ 25% sisanya sebelum launch",
+    "paymentNote": "✓ Transfer via BCA / Mandiri / QRIS • Invoice resmi setiap pembayaran",
+    "selectPackage": "Pilih Paket Ini",
+    "notePrefix": "⚠️ Catatan:",
+    "services": [
+      {
+        "title": "Landing Page",
+        "desc": "Website satu halaman untuk promosi produk/jasa dengan desain konversi tinggi",
+        "bestFor": "Product launch, promo event, lead generation"
+      },
+      {
+        "title": "Company Profile",
+        "desc": "Website multi-halaman untuk profil bisnis dengan portfolio & layanan lengkap",
+        "bestFor": "Perusahaan, konsultan, studio/agency"
+      },
+      {
+        "title": "Katalog Digital",
+        "desc": "Katalog produk online dengan sistem order via WhatsApp",
+        "bestFor": "UMKM, toko retail, distributor"
+      },
+      {
+        "title": "Website + Blog",
+        "desc": "Website dengan CMS untuk posting artikel dan content marketing",
+        "bestFor": "Personal brand, media, content creator"
+      }
+    ],
+    "pricingPackages": [
+      {
+        "name": "Paket Express",
+        "subtitle": "Landing Page Simple",
+        "description": "Untuk yang butuh cepat & budget terbatas",
+        "price": "Rp 600.000",
+        "strikePrice": "Rp 1.200.000",
+        "features": [
+          "1 halaman landing page responsive",
+          "3-4 section (Hero, Features, CTA, Footer)",
+          "Design pakai template premium (custom warna/logo)",
+          "Form kontak sederhana",
+          "WhatsApp button",
+          "Mobile friendly",
+          "1x revisi minor",
+          "Selesai 3-5 hari kerja"
+        ],
+        "timeline": "3-5 hari",
+        "limitations": [
+          "Tidak termasuk copywriting (konten dari client)",
+          "Tidak ada SEO optimization",
+          "Support 7 hari saja"
+        ],
+        "badge": "Budget Friendly"
+      },
+      {
+        "name": "Paket Starter",
+        "subtitle": "Landing Page Pro",
+        "description": "Landing page dengan optimasi & konversi lebih baik",
+        "price": "Rp 1.200.000",
+        "strikePrice": "Rp 2.000.000",
+        "features": [
+          "1 halaman landing page custom design",
+          "5-6 section lengkap",
+          "Form kontak + email notifikasi",
+          "WhatsApp floating button",
+          "Google Analytics setup",
+          "Basic SEO (meta tags, sitemap)",
+          "Loading speed optimization",
+          "Mobile & desktop responsive",
+          "2x revisi design",
+          "Bantuan upload ke hosting",
+          "Support 14 hari"
+        ],
+        "timeline": "7-10 hari",
+        "badge": "Most Popular",
+        "note": "Domain & hosting dibantu setup (biaya terpisah)"
+      },
+      {
+        "name": "Paket Professional",
+        "subtitle": "Multi-Page Website",
+        "description": "Company profile lengkap untuk bisnis profesional",
+        "price": "Rp 2.200.000",
+        "strikePrice": "Rp 3.500.000",
+        "features": [
+          "4-5 halaman (Home, About, Services, Portfolio, Contact)",
+          "Custom design profesional",
+          "Blog section dengan CMS sederhana",
+          "Contact form + Google Maps",
+          "SEO optimization per halaman",
+          "Google Analytics + Facebook Pixel",
+          "Social media integration",
+          "WhatsApp chat widget",
+          "Admin panel untuk update konten",
+          "3x revisi design",
+          "Video tutorial lengkap",
+          "Support 30 hari"
+        ],
+        "timeline": "2-3 minggu",
+        "badge": "Best Value"
+      },
+      {
+        "name": "Paket Business",
+        "subtitle": "Katalog Digital",
+        "description": "Website katalog produk + order system",
+        "price": "Rp 4.000.000",
+        "strikePrice": "Rp 6.500.000",
+        "features": [
+          "Katalog produk (unlimited)",
+          "Shopping cart + order via WhatsApp",
+          "Admin panel untuk kelola produk",
+          "Kategori & filter produk",
+          "Product detail page",
+          "SEO optimization",
+          "Blog section",
+          "Analytics tracking",
+          "3x revisi design",
+          "Tutorial admin panel",
+          "Support 45 hari"
+        ],
+        "timeline": "3-4 minggu",
+        "badge": "For UMKM"
+      }
+    ],
+    "addOnServices": [
+      {
+        "icon": "✍️",
+        "title": "Copywriting Service",
+        "price": "Rp 300rb",
+        "desc": "Gue buatin konten landing page yang converting (headline, CTA, dll)",
+        "features": [
+          "Headline menarik",
+          "CTA yang converting",
+          "Product description",
+          "SEO-friendly copy"
+        ]
+      },
+      {
+        "icon": "📸",
+        "title": "Stock Photo Premium",
+        "price": "Rp 200rb",
+        "desc": "Akses foto premium dari Unsplash Pro / Pexels untuk website",
+        "features": [
+          "10+ foto premium",
+          "HD quality",
+          "Sesuai tema bisnis",
+          "Licensed properly"
+        ]
+      },
+      {
+        "icon": "🔧",
+        "title": "Maintenance",
+        "price": "Rp 250rb/bulan",
+        "desc": "Update konten, backup, security check, priority support",
+        "features": [
+          "Update konten 2x/bulan",
+          "Weekly backup",
+          "Security check",
+          "Priority WA support"
+        ]
+      },
+      {
+        "icon": "📈",
+        "title": "SEO Boost",
+        "price": "Rp 750rb",
+        "desc": "Keyword research, on-page SEO, speed optimization, Search Console",
+        "features": [
+          "Keyword research",
+          "On-page SEO",
+          "Speed optimization",
+          "Google Search Console"
+        ]
+      }
+    ],
+    "standardFeatures": [
+      "Responsive Design (Mobile-Friendly)",
+      "Fast Loading Speed (< 3 detik)",
+      "SEO-Friendly Structure",
+      "SSL Certificate (HTTPS)",
+      "WhatsApp Integration",
+      "Google Analytics",
+      "Contact Form",
+      "Social Media Links",
+      "Browser Compatible",
+      "Backup Setup",
+      "Documentation & Tutorial"
+    ],
+    "notIncluded": [
+      "Copywriting/penulisan konten (bisa dibantu dengan fee tambahan)",
+      "Foto produk/professional photography",
+      "Logo design (jika belum punya)",
+      "Biaya perpanjangan domain/hosting tahun ke-2",
+      "Update konten rutin setelah masa support habis"
+    ],
+    "processSteps": [
+      {
+        "step": 1,
+        "title": "Konsultasi & Briefing",
+        "desc": "Kita diskusi kebutuhan, goals, dan budget Anda. Saya riset kompetitor & target market"
+      },
+      {
+        "step": 2,
+        "title": "Proposal & Planning",
+        "desc": "Saya kirim proposal detail dengan timeline, deliverables, dan wireframe/mockup awal"
+      },
+      {
+        "step": 3,
+        "title": "Development",
+        "desc": "Saya mulai kerjakan project dengan update berkala. Anda bisa request revisi di setiap milestone"
+      },
+      {
+        "step": 4,
+        "title": "Review & Testing",
+        "desc": "Anda review hasil kerja dan saya pastikan semuanya berfungsi sempurna di semua device"
+      },
+      {
+        "step": 5,
+        "title": "Launch & Support",
+        "desc": "Project go live! Saya berikan tutorial dan free support 30 hari"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Berapa lama proses pembuatan website?",
+        "a": "Tergantung paket: Landing page 1-2 minggu, Company profile 3-4 minggu, Katalog Digital 4-6 minggu, Custom 6-10 minggu."
+      },
+      {
+        "q": "Apakah saya bisa update website sendiri?",
+        "a": "Bisa! Saya akan setup CMS yang user-friendly dan kasih tutorial lengkap. Anda bisa update konten tanpa perlu coding."
+      },
+      {
+        "q": "Bagaimana dengan revisi?",
+        "a": "Setiap paket ada quota revisi. Paket Starter: 2x, Professional: 3x, Business: unlimited selama development."
+      },
+      {
+        "q": "Apakah ada garansi?",
+        "a": "Ya, saya berikan free support 30 hari untuk bug fixing dan troubleshooting setelah launch."
+      },
+      {
+        "q": "Apakah include domain dan hosting?",
+        "a": "Paket Professional dan Business include domain + hosting 1 tahun. Paket Starter dibantu setup (biaya terpisah ~Rp 300-500rb/tahun)."
+      },
+      {
+        "q": "Bagaimana untuk E-Commerce dengan payment gateway?",
+        "a": "Untuk e-commerce full dengan shopping cart dan payment gateway (Midtrans, dll), harga mulai dari Rp 8-10jt. Konsultasi dulu untuk diskusi detail."
+      }
+    ]
+  },
+  "Contact": {
+    "title": "Hubungi Kami",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "social": "Media Sosial",
+    "locationTitle": "Lokasi",
+    "locationDesc": "MuhKelvin Developer\n(Melayani seluruh Indonesia secara remote)",
+    "formLoading": "Memuat Form..."
+  }
+}

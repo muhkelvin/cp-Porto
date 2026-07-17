@@ -1,7 +1,14 @@
+import { useTranslations } from 'next-intl';
 import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Home() {
+  const tHero = useTranslations('Hero');
+  const tWhy = useTranslations('WhyFreelancer');
+  const tServices = useTranslations('Services');
+  const tFeatures = useTranslations('Features');
+  const tCTA = useTranslations('CTA');
+
   return (
       <div className="min-h-screen bg-gradient-to-b from-emerald-50 to-white">
         {/* Hero Section */}
@@ -11,27 +18,27 @@ export default function Home() {
             <div className="lg:w-1/2 space-y-8 relative z-10">
               <div className="inline-block mb-4">
                 <span className="bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-medium">
-                  Hi! Saya Muhammad Kelvin 👋
+                  {tHero('badge')}
                 </span>
               </div>
 
               <h1 className="text-5xl md:text-6xl font-bold text-emerald-900 leading-tight">
                 <span className="text-4xl md:text-5xl font-medium text-emerald-800 block mb-2">
-                  Halo, Saya Kelvin
+                  {tHero('title1')}
                 </span>
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-emerald-500">
-                  Saya Bantu Bisnis Anda Hadir Profesional
+                  {tHero('title2')}
                 </span>
                 <br />
                 <span className="text-3xl md:text-4xl font-medium text-emerald-800 mt-2 block">
-                  di Dunia Digital
+                  {tHero('title3')}
                 </span>
               </h1>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                Freelance Web Developer yang fokus membangun website fungsional, modern, dan terjangkau untuk UMKM & bisnis lokal. 
+                {tHero('description1')}
                 <span className="block mt-2 font-medium text-gray-700">
-                  Deal langsung dengan saya - dari konsultasi hingga website jadi.
+                  {tHero('description2')}
                 </span>
               </p>
 
@@ -41,7 +48,7 @@ export default function Home() {
                     target="_blank"
                     className="relative inline-flex items-center justify-center px-8 py-4 overflow-hidden font-medium text-white transition duration-300 ease-out rounded-full shadow-lg group bg-gradient-to-r from-emerald-600 to-emerald-500"
                 >
-                  <span className="relative">💬 Konsultasi Gratis</span>
+                  <span className="relative">{tHero('cta1')}</span>
                 </Link>
 
                 <Link
@@ -49,7 +56,7 @@ export default function Home() {
                     className="flex items-center justify-center px-8 py-4 font-medium text-emerald-700 hover:text-emerald-600 transition-colors duration-300 group border-2 border-emerald-200 rounded-full hover:border-emerald-500"
                 >
                   <span className="mr-2">✨</span>
-                  <span>Lihat Portfolio</span>
+                  <span>{tHero('cta2')}</span>
                 </Link>
               </div>
 
@@ -57,15 +64,15 @@ export default function Home() {
               <div className="flex flex-wrap gap-6 pt-4 text-sm text-gray-700">
                 <div className="flex items-center gap-2">
                   <span className="text-emerald-600">✓</span>
-                  <span>Response &lt; 2 jam</span>
+                  <span>{tHero('trust1')}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-emerald-600">✓</span>
-                  <span>Harga Transparan</span>
+                  <span>{tHero('trust2')}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-emerald-600">✓</span>
-                  <span>Free Support 30 Hari</span>
+                  <span>{tHero('trust3')}</span>
                 </div>
               </div>
             </div>
@@ -91,19 +98,19 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-emerald-800 mb-4">
-                Kenapa Pilih Freelancer?
+                {tWhy('title')}
               </h2>
               <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-                Berbeda dengan agency besar - Anda dapat perhatian penuh dan harga yang lebih fair
+                {tWhy('subtitle')}
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { icon: '🤝', title: 'Deal Langsung', desc: 'Chat langsung dengan yang ngerjain, tanpa middleman' },
-                { icon: '💰', title: 'Harga Terjangkau', desc: 'No markup agency, harga lebih fair untuk UMKM' },
-                { icon: '⚡', title: 'Komunikasi Cepat', desc: 'Response via WhatsApp, revisi langsung ditangani' },
-                { icon: '🎯', title: 'Quality Focus', desc: 'Fokus pada kualitas, bukan kuantitas project' },
+                { icon: '🤝', title: tWhy('item1Title'), desc: tWhy('item1Desc') },
+                { icon: '💰', title: tWhy('item2Title'), desc: tWhy('item2Desc') },
+                { icon: '⚡', title: tWhy('item3Title'), desc: tWhy('item3Desc') },
+                { icon: '🎯', title: tWhy('item4Title'), desc: tWhy('item4Desc') },
               ].map((item, i) => (
                 <div key={i} className="p-8 rounded-2xl bg-white hover:bg-emerald-50 transition-all duration-300 shadow-lg hover:shadow-xl border border-emerald-100">
                   <div className="text-4xl mb-6">{item.icon}</div>
@@ -120,21 +127,21 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-emerald-800 mb-4">
-                Apa yang Saya Tawarkan?
+                {tServices('title')}
               </h2>
               <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-                Website profesional yang tidak hanya bagus dilihat, tapi juga efektif untuk bisnis Anda
+                {tServices('subtitle')}
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
-                { icon: '🎯', title: 'Landing Page', desc: 'Website satu halaman untuk promosi produk/jasa dengan konversi tinggi' },
-                { icon: '🏢', title: 'Company Profile', desc: 'Website lengkap untuk profil perusahaan dengan portfolio & layanan' },
-                { icon: '🛒', title: 'Katalog Produk', desc: 'Toko online atau katalog digital dengan sistem manajemen produk' },
-                { icon: '📝', title: 'Website + Blog', desc: 'Website dengan fitur blog untuk content marketing dan SEO' },
-                { icon: '⚙️', title: 'Custom Web App', desc: 'Solusi web khusus sesuai kebutuhan bisnis spesifik Anda' },
-                { icon: '🔧', title: 'Maintenance', desc: 'Update rutin, backup, dan technical support untuk website Anda' },
+                { icon: '🎯', title: tServices('item1Title'), desc: tServices('item1Desc') },
+                { icon: '🏢', title: tServices('item2Title'), desc: tServices('item2Desc') },
+                { icon: '🛒', title: tServices('item3Title'), desc: tServices('item3Desc') },
+                { icon: '📝', title: tServices('item4Title'), desc: tServices('item4Desc') },
+                { icon: '⚙️', title: tServices('item5Title'), desc: tServices('item5Desc') },
+                { icon: '🔧', title: tServices('item6Title'), desc: tServices('item6Desc') },
               ].map((item, i) => (
                 <div key={i} className="p-8 rounded-2xl bg-white transition-all duration-300 shadow-md hover:shadow-xl border border-emerald-100">
                   <div className="text-4xl mb-4">{item.icon}</div>
@@ -149,7 +156,7 @@ export default function Home() {
                   href="/services"
                   className="inline-flex items-center px-6 py-3 text-emerald-600 font-medium hover:text-emerald-700 transition-colors"
               >
-                Lihat Detail Layanan & Harga
+                {tServices('link')}
                 <span className="ml-2">→</span>
               </Link>
             </div>
@@ -161,10 +168,10 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-emerald-800 mb-4">
-                Yang Pasti Anda Dapatkan
+                {tFeatures('title')}
               </h2>
               <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-                Fitur standar di setiap project website yang saya kerjakan
+                {tFeatures('subtitle')}
               </p>
             </div>
 
@@ -194,10 +201,10 @@ export default function Home() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <div className="bg-white rounded-2xl p-8 md:p-12 shadow-2xl transform hover:scale-[1.01] transition-transform duration-300">
               <h2 className="text-3xl md:text-4xl font-bold text-emerald-800 mb-6">
-                Siap Bawa Bisnis Anda Go Digital?
+                {tCTA('title')}
               </h2>
               <p className="text-lg text-gray-700 mb-8 max-w-xl mx-auto">
-                Jadwalkan konsultasi gratis sekarang. Kita diskusikan kebutuhan Anda tanpa komitmen - just a friendly chat about your goals.
+                {tCTA('subtitle')}
               </p>
               <div className="flex flex-col md:flex-row justify-center gap-4">
                 <Link
@@ -205,17 +212,17 @@ export default function Home() {
                     target="_blank"
                     className="inline-flex items-center justify-center px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full transition-all duration-300 shadow-lg hover:shadow-xl font-medium"
                 >
-                  💬 Chat WhatsApp Sekarang
+                  {tCTA('button1')}
                 </Link>
                 <Link
                     href="/services"
                     className="inline-flex items-center justify-center px-8 py-4 bg-white text-emerald-700 border-2 border-emerald-200 hover:border-emerald-500 rounded-full transition-all duration-300 font-medium"
                 >
-                  Lihat Paket & Harga
+                  {tCTA('button2')}
                 </Link>
               </div>
               <p className="mt-6 text-sm text-gray-600">
-                <span className="font-medium">No pressure, no commitment</span> - Konsultasi pertama gratis
+                <span className="font-medium">{tCTA('note1')}</span> {tCTA('note2')}
               </p>
             </div>
           </div>

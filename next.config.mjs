@@ -1,3 +1,9 @@
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const withNextIntl = createNextIntlPlugin(
+    './src/i18n/request.js'
+);
+
 const nextConfig = {
     images: {
         domains: ['picsum.photos', 'i.pravatar.cc'],
@@ -14,4 +20,4 @@ const nextConfig = {
     },
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

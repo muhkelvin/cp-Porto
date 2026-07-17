@@ -1,4 +1,6 @@
-import Link from 'next/link'
+import NextLink from 'next/link'
+import { Link } from '@/src/i18n/routing'
+import { useTranslations } from 'next-intl'
 import {
     Instagram,
     Linkedin,
@@ -7,6 +9,7 @@ import {
 import { FaWhatsapp } from 'react-icons/fa'
 
 export default function Footer() {
+    const t = useTranslations('Footer');
     const socialLinks = [
         { icon: Instagram, url: "https://www.instagram.com/bisagodigital/" },
         { icon: Linkedin, url: "https://www.linkedin.com/company/bisa-go-digital" }
@@ -23,47 +26,46 @@ export default function Footer() {
                     <div>
                         <h2 className="text-2xl font-bold mb-2">Muhammad Kelvin</h2>
                         <p className="text-emerald-100 text-sm leading-relaxed">
-                            Spesialis dalam membangun website modern, responsif, dan SEO-friendly 
-untuk UMKM & startup di Indonesia.
+                            {t('desc')}
                         </p>
                         <div className="flex mt-4 space-x-4">
                             {socialLinks.map((social, index) => (
-                                <Link
+                                <NextLink
                                     key={index}
                                     href={social.url}
                                     target="_blank"
                                     className="text-emerald-100 hover:text-white transition-colors"
                                 >
                                     <social.icon size={22} />
-                                </Link>
+                                </NextLink>
                             ))}
                         </div>
                     </div>
 
                     {/* Layanan */}
                     <div>
-                        <h3 className="text-lg font-semibold mb-3">Layanan</h3>
+                        <h3 className="text-lg font-semibold mb-3">{t('servicesTitle')}</h3>
                         <ul className="space-y-2 text-emerald-100 text-sm">
-                            <li><Link href="/services" className="hover:text-white transition">Pembuatan Website</Link></li>                        </ul>
+                            <li><Link href="/services" className="hover:text-white transition">{t('webDev')}</Link></li>                        </ul>
                     </div>
 
                     {/* Perusahaan */}
                     <div>
-                        <h3 className="text-lg font-semibold mb-3">Perusahaan</h3>
+                        <h3 className="text-lg font-semibold mb-3">{t('companyTitle')}</h3>
                         <ul className="space-y-2 text-emerald-100 text-sm">
-                            <li><Link href="/about" className="hover:text-white transition">Tentang Saya</Link></li>
-                            <li><Link href="/portfolio" className="hover:text-white transition">Portofolio</Link></li>
-                            <li><Link href="/contact" className="hover:text-white transition">Hubungi Kami</Link></li>
+                            <li><Link href="/about" className="hover:text-white transition">{t('about')}</Link></li>
+                            <li><Link href="/portfolio" className="hover:text-white transition">{t('portfolio')}</Link></li>
+                            <li><Link href="/contact" className="hover:text-white transition">{t('contactUs')}</Link></li>
                         </ul>
                     </div>
 
                     {/* Kontak */}
                     <div>
-                        <h3 className="text-lg font-semibold mb-3">Kontak</h3>
+                        <h3 className="text-lg font-semibold mb-3">{t('contactTitle')}</h3>
                         <ul className="space-y-2 text-emerald-100 text-sm">
                             <li>Email: <a href="mailto:muhkelvin36@gmail.com" className="hover:text-white transition">muhkelvin36@gmail.com</a></li>
                             <li>WhatsApp: <a href={waLink} target="_blank" className="hover:text-white transition">+62 89526323412</a></li>
-                            <li>Lokasi: Online — Melayani seluruh Indonesia 🇮🇩</li>
+                            <li>{t('location')}</li>
                         </ul>
                     </div>
                 </div>
@@ -74,19 +76,19 @@ untuk UMKM & startup di Indonesia.
                         &copy; {new Date().getFullYear()} <strong>Muhammad Kelvin</strong>. All Rights Reserved.
                     </p>
                     <p>
-                        Dibuat ❤️ oleh <span className="text-white font-medium">Kelvin</span>
+                        {t('madeBy')} <span className="text-white font-medium">Kelvin</span>
                     </p>
                 </div>
             </div>
 
             {/* Floating WhatsApp Button */}
-            <Link
+            <NextLink
                 href={waLink}
                 target="_blank"
                 className="fixed bottom-6 right-6 bg-emerald-500 text-white p-4 rounded-full shadow-2xl hover:bg-emerald-600 hover:scale-110 transition-all z-50"
             >
                 <FaWhatsapp size={26} />
-            </Link>
+            </NextLink>
         </footer>
     )
 }

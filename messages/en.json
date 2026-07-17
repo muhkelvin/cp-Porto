@@ -1,0 +1,418 @@
+{
+  "Hero": {
+    "badge": "Hi! I'm Muhammad Kelvin 👋",
+    "title1": "Hello, I'm Kelvin",
+    "title2": "I Help Your Business Build a Professional Presence",
+    "title3": "in the Digital World",
+    "description1": "A Freelance Web Developer focusing on building functional, modern, and affordable websites for SMEs & local businesses.",
+    "description2": "Deal directly with me - from consultation to the finished website.",
+    "cta1": "💬 Free Consultation",
+    "cta2": "View Portfolio",
+    "trust1": "Response < 2 hours",
+    "trust2": "Transparent Pricing",
+    "trust3": "30 Days Free Support"
+  },
+  "WhyFreelancer": {
+    "title": "Why Choose a Freelancer?",
+    "subtitle": "Unlike big agencies - you get full attention and fairer pricing",
+    "item1Title": "Direct Deal",
+    "item1Desc": "Chat directly with the developer, no middlemen",
+    "item2Title": "Affordable Prices",
+    "item2Desc": "No agency markup, fairer pricing for SMEs",
+    "item3Title": "Fast Communication",
+    "item3Desc": "Responses via WhatsApp, revisions handled directly",
+    "item4Title": "Quality Focus",
+    "item4Desc": "Focusing on quality, not project quantity"
+  },
+  "Services": {
+    "title": "What Do I Offer?",
+    "subtitle": "Professional websites that don't just look good, but are effective for your business",
+    "item1Title": "Landing Page",
+    "item1Desc": "A single-page website for product/service promotions with high conversion",
+    "item2Title": "Company Profile",
+    "item2Desc": "A complete website for company profiles with portfolios & services",
+    "item3Title": "Product Catalog",
+    "item3Desc": "Online store or digital catalog with a product management system",
+    "item4Title": "Website + Blog",
+    "item4Desc": "Websites featuring a blog for content marketing and SEO",
+    "item5Title": "Custom Web App",
+    "item5Desc": "Custom web solutions tailored to your specific business needs",
+    "item6Title": "Maintenance",
+    "item6Desc": "Routine updates, backups, and technical support for your website",
+    "link": "View Service Details & Pricing"
+  },
+  "Features": {
+    "title": "What You Will Definitely Get",
+    "subtitle": "Standard features in every website project I work on"
+  },
+  "CTA": {
+    "title": "Ready to Take Your Business Digital?",
+    "subtitle": "Schedule a free consultation now. Let's discuss your needs without any commitment - just a friendly chat about your goals.",
+    "button1": "💬 Chat on WhatsApp Now",
+    "button2": "View Packages & Pricing",
+    "note1": "No pressure, no commitment",
+    "note2": "- First consultation is free"
+  },
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "contact": "Contact",
+    "consult": "Consult Now"
+  },
+  "Footer": {
+    "desc": "Specialist in building modern, responsive, and SEO-friendly websites for SMEs & startups in Indonesia.",
+    "servicesTitle": "Services",
+    "webDev": "Website Development",
+    "companyTitle": "Company",
+    "about": "About Me",
+    "portfolio": "Portfolio",
+    "contactUs": "Contact Us",
+    "contactTitle": "Contact",
+    "location": "Location: Online — Serving all over Indonesia 🇮🇩",
+    "madeBy": "Made with ❤️ by"
+  },
+  "About": {
+    "title": "About Me",
+    "p1": "Hello, I am Muhammad Kelvin, a freelance Web Developer focused on helping SMEs and local businesses present themselves professionally in the digital world.",
+    "p2": "I believe every business, no matter how small, deserves to look credible online. A website is not just a visual display — it is a digital foundation to grow and be known by new customers.",
+    "p3": "With a personal approach, I ensure every project is developed according to your needs, not mass templates. I work directly with clients so the results are efficient, clean, and ready to scale.",
+    "principlesTitle": "My Working Principles:",
+    "principles": [
+      {
+        "title": "Transparency",
+        "desc": "Clear pricing, realistic timelines, no hidden costs."
+      },
+      {
+        "title": "Responsive",
+        "desc": "Direct communication via WhatsApp, regular updates."
+      },
+      {
+        "title": "Code Quality",
+        "desc": "Clean code, secure, and easy to maintain."
+      },
+      {
+        "title": "Focus on Results",
+        "desc": "Fast design, mobile-first, and SEO-friendly."
+      },
+      {
+        "title": "Post-Project Support",
+        "desc": "30 days of support and complete documentation."
+      }
+    ],
+    "whyTitle": "Why Choose a Freelancer?",
+    "whyList": [
+      {
+        "title": "Direct Contact with the Developer",
+        "desc": "No sales middlemen or managers. You communicate directly with me, the one building the website from scratch to online."
+      },
+      {
+        "title": "More Efficient Pricing",
+        "desc": "No large operational costs like an agency. The results remain professional, the price remains reasonable for SMEs."
+      },
+      {
+        "title": "Fast & Flexible Communication",
+        "desc": "Fast response via WhatsApp. Revisions and feedback are handled directly without long bureaucracy."
+      },
+      {
+        "title": "Quality Over Quantity",
+        "desc": "I only take projects that I can handle optimally — every website is done with detail."
+      }
+    ],
+    "techTitle": "Tech Stack & Expertise",
+    "techDesc": "Tools and technologies I use to build fast, secure, and maintainable websites.",
+    "techTools": "Additional tools: Figma, Adobe XD, GitHub, Google Analytics, Notion, VS Code",
+    "ctaTitle": "Ready to Go Digital Now?",
+    "ctaDesc": "Let's have a casual chat about your website needs. Free consultation — no pressure, no commitment.",
+    "ctaBtn": "💬 Chat via WhatsApp",
+    "ctaResp": "Response time: < 2 hours"
+  },
+  "Portfolio": {
+    "title": "Portfolio",
+    "btnSite": "Visit Website",
+    "ctaTitle": "Want to See More?",
+    "ctaDesc": "Contact me for access to complete case studies and technical details.",
+    "ctaBtn": "Request Case Study",
+    "categories": [
+      "All",
+      "Landing Page",
+      "Company Profile",
+      "Website Application"
+    ]
+  },
+  "ServicesPage": {
+    "headerTitle": "My Services",
+    "headerSubtitle": "Specialized in professional website creation for SMEs & Local Businesses",
+    "pricingTitle": "Packages & Pricing",
+    "pricingSubtitle": "Choose a package that fits your needs and budget",
+    "addonTitle": "Add-On Services",
+    "addonSubtitle": "Boost your website performance with our add-on services",
+    "featuresTitle": "What You Will Get",
+    "featuresSubtitle": "Standard features in every website package I work on",
+    "notIncludedTitle": "What is NOT Included:",
+    "processTitle": "How I Work",
+    "processSubtitle": "A transparent and structured process from consultation to launch",
+    "faqTitle": "Frequently Asked Questions",
+    "ctaTitle": "Ready to Start Your Website Project?",
+    "ctaSubtitle": "Schedule a free consultation now. No pressure, no commitment—just a friendly chat about your needs.",
+    "ctaChat": "💬 Chat on WhatsApp Now",
+    "ctaPortfolio": "View Portfolio",
+    "ctaResp": "Response time: < 2 hours (Mon-Fri, 09.00-18.00 WIB)",
+    "paymentTitle": "💰 Payment System:",
+    "payment1": "▸ 50% Down Payment to start the project",
+    "payment2": "▸ 25% when development is finished (for review)",
+    "payment3": "▸ 25% remaining before launch",
+    "paymentNote": "✓ Transfer via BCA / Mandiri / QRIS • Official invoice for each payment",
+    "selectPackage": "Choose This Package",
+    "notePrefix": "⚠️ Note:",
+    "services": [
+      {
+        "title": "Landing Page",
+        "desc": "Single page website for product/service promotion with high conversion design",
+        "bestFor": "Product launch, promo events, lead generation"
+      },
+      {
+        "title": "Company Profile",
+        "desc": "Multi-page website for business profile with complete portfolio & services",
+        "bestFor": "Companies, consultants, studios/agencies"
+      },
+      {
+        "title": "Digital Catalog",
+        "desc": "Online product catalog with WhatsApp order system",
+        "bestFor": "SMEs, retail stores, distributors"
+      },
+      {
+        "title": "Website + Blog",
+        "desc": "Website with CMS for posting articles and content marketing",
+        "bestFor": "Personal brand, media, content creators"
+      }
+    ],
+    "pricingPackages": [
+      {
+        "name": "Express Package",
+        "subtitle": "Simple Landing Page",
+        "description": "For those who need it fast with a tight budget",
+        "price": "Rp 600.000",
+        "strikePrice": "Rp 1.200.000",
+        "features": [
+          "1 page responsive landing page",
+          "3-4 sections (Hero, Features, CTA, Footer)",
+          "Designed using premium templates (custom colors/logo)",
+          "Simple contact form",
+          "WhatsApp button",
+          "Mobile friendly",
+          "1x minor revision",
+          "Finished in 3-5 working days"
+        ],
+        "timeline": "3-5 days",
+        "limitations": [
+          "Copywriting not included (content provided by client)",
+          "No SEO optimization",
+          "7 days support only"
+        ],
+        "badge": "Budget Friendly"
+      },
+      {
+        "name": "Starter Package",
+        "subtitle": "Pro Landing Page",
+        "description": "Landing page with better optimization & conversion",
+        "price": "Rp 1.200.000",
+        "strikePrice": "Rp 2.000.000",
+        "features": [
+          "1 page custom design landing page",
+          "5-6 full sections",
+          "Contact form + email notification",
+          "WhatsApp floating button",
+          "Google Analytics setup",
+          "Basic SEO (meta tags, sitemap)",
+          "Loading speed optimization",
+          "Mobile & desktop responsive",
+          "2x design revisions",
+          "Assistance uploading to hosting",
+          "14 days support"
+        ],
+        "timeline": "7-10 days",
+        "badge": "Most Popular",
+        "note": "Domain & hosting setup assisted (separate cost)"
+      },
+      {
+        "name": "Professional Package",
+        "subtitle": "Multi-Page Website",
+        "description": "Complete company profile for professional businesses",
+        "price": "Rp 2.200.000",
+        "strikePrice": "Rp 3.500.000",
+        "features": [
+          "4-5 pages (Home, About, Services, Portfolio, Contact)",
+          "Custom professional design",
+          "Blog section with simple CMS",
+          "Contact form + Google Maps",
+          "SEO optimization per page",
+          "Google Analytics + Facebook Pixel",
+          "Social media integration",
+          "WhatsApp chat widget",
+          "Admin panel for content updates",
+          "3x design revisions",
+          "Complete video tutorial",
+          "30 days support"
+        ],
+        "timeline": "2-3 weeks",
+        "badge": "Best Value"
+      },
+      {
+        "name": "Business Package",
+        "subtitle": "Digital Catalog",
+        "description": "Product catalog website + ordering system",
+        "price": "Rp 4.000.000",
+        "strikePrice": "Rp 6.500.000",
+        "features": [
+          "Product catalog (unlimited)",
+          "Shopping cart + order via WhatsApp",
+          "Admin panel for product management",
+          "Product categories & filters",
+          "Product detail page",
+          "SEO optimization",
+          "Blog section",
+          "Analytics tracking",
+          "3x design revisions",
+          "Admin panel tutorial",
+          "45 days support"
+        ],
+        "timeline": "3-4 weeks",
+        "badge": "For SMEs"
+      }
+    ],
+    "addOnServices": [
+      {
+        "icon": "✍️",
+        "title": "Copywriting Service",
+        "price": "Rp 300rb",
+        "desc": "I will write converting landing page content (headline, CTA, etc.)",
+        "features": [
+          "Catchy headlines",
+          "Converting CTAs",
+          "Product descriptions",
+          "SEO-friendly copy"
+        ]
+      },
+      {
+        "icon": "📸",
+        "title": "Premium Stock Photos",
+        "price": "Rp 200rb",
+        "desc": "Access to premium photos from Unsplash Pro / Pexels for your website",
+        "features": [
+          "10+ premium photos",
+          "HD quality",
+          "Matches your business theme",
+          "Properly licensed"
+        ]
+      },
+      {
+        "icon": "🔧",
+        "title": "Maintenance",
+        "price": "Rp 250rb/month",
+        "desc": "Content updates, backups, security checks, priority support",
+        "features": [
+          "Content updates 2x/month",
+          "Weekly backups",
+          "Security checks",
+          "Priority WA support"
+        ]
+      },
+      {
+        "icon": "📈",
+        "title": "SEO Boost",
+        "price": "Rp 750rb",
+        "desc": "Keyword research, on-page SEO, speed optimization, Search Console setup",
+        "features": [
+          "Keyword research",
+          "On-page SEO",
+          "Speed optimization",
+          "Google Search Console"
+        ]
+      }
+    ],
+    "standardFeatures": [
+      "Responsive Design (Mobile-Friendly)",
+      "Fast Loading Speed (< 3 seconds)",
+      "SEO-Friendly Structure",
+      "SSL Certificate (HTTPS)",
+      "WhatsApp Integration",
+      "Google Analytics",
+      "Contact Form",
+      "Social Media Links",
+      "Browser Compatible",
+      "Backup Setup",
+      "Documentation & Tutorial"
+    ],
+    "notIncluded": [
+      "Copywriting/content writing (can be added for an extra fee)",
+      "Product photos/professional photography",
+      "Logo design (if you don't have one)",
+      "Domain/hosting renewal fees for the 2nd year",
+      "Routine content updates after support period ends"
+    ],
+    "processSteps": [
+      {
+        "step": 1,
+        "title": "Consultation & Briefing",
+        "desc": "We discuss your needs, goals, and budget. I will research competitors & your target market"
+      },
+      {
+        "step": 2,
+        "title": "Proposal & Planning",
+        "desc": "I will send a detailed proposal with timeline, deliverables, and initial wireframes/mockups"
+      },
+      {
+        "step": 3,
+        "title": "Development",
+        "desc": "I start working on the project with regular updates. You can request revisions at each milestone"
+      },
+      {
+        "step": 4,
+        "title": "Review & Testing",
+        "desc": "You review the final work, and I make sure everything functions perfectly across all devices"
+      },
+      {
+        "step": 5,
+        "title": "Launch & Support",
+        "desc": "Project goes live! I will provide tutorials and 30 days of free support"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How long does the website creation take?",
+        "a": "Depends on the package: Landing page 1-2 weeks, Company profile 3-4 weeks, Digital Catalog 4-6 weeks, Custom 6-10 weeks."
+      },
+      {
+        "q": "Can I update the website myself?",
+        "a": "Yes! I will setup a user-friendly CMS and provide complete tutorials. You can update content without needing to code."
+      },
+      {
+        "q": "What about revisions?",
+        "a": "Each package has a revision quota. Starter Package: 2x, Professional: 3x, Business: unlimited during development."
+      },
+      {
+        "q": "Is there any warranty?",
+        "a": "Yes, I provide 30 days of free support for bug fixing and troubleshooting after launch."
+      },
+      {
+        "q": "Does it include domain and hosting?",
+        "a": "Professional and Business packages include 1 year of domain + hosting. Starter package receives setup assistance (separate cost ~Rp 300-500k/year)."
+      },
+      {
+        "q": "What about E-Commerce with payment gateways?",
+        "a": "For full e-commerce with a shopping cart and payment gateway (Midtrans, etc.), prices start from Rp 8-10m. Consult first to discuss details."
+      }
+    ]
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "social": "Social Media",
+    "locationTitle": "Location",
+    "locationDesc": "MuhKelvin Developer\n(Serving all over Indonesia remotely)",
+    "formLoading": "Loading Form..."
+  }
+}
