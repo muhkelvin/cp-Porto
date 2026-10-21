@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl';
 const projects = [
     {
         title: 'Community Forum Platform',
-        category: 'Webite Application',
+        category: 'Website Application',
         tags: ['Forum', 'Social', 'Community'],
         description: 'Platform komunitas interaktif yang memungkinkan pengguna untuk membuat thread, memberikan komentar, dan menyimpan diskusi.',
         image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1470&auto=format&fit=crop',
@@ -14,7 +14,7 @@ const projects = [
     },
     {
         title: 'Modern Blog Website',
-        category: 'Webite Application',
+        category: 'Website Application',
         tags: ['Blog', 'CMS', 'Content'],
         description: 'Website blog modern dengan antarmuka yang bersih untuk membaca dan mempublikasikan konten artikel.',
         image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1470&auto=format&fit=crop',
@@ -22,7 +22,7 @@ const projects = [
     },
     {
         title: 'Parfume Store E-Commerce',
-        category: 'Webite Application',
+        category: 'Website Application',
         tags: ['Store', 'Perfume', 'E-Commerce'],
         description: 'Toko online e-commerce eksklusif yang menawarkan berbagai koleksi parfum premium.',
         image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=1470&auto=format&fit=crop',
@@ -30,7 +30,7 @@ const projects = [
     },
     {
         title: 'Contact Management System',
-        category: 'Webite Application',
+        category: 'Website Application',
         tags: ['CMS', 'Database'],
         description: 'Sistem manajemen kontak dengan fitur CRUD dan pengelompokan data',
         image: 'https://picsum.photos/600/400?random=21',
@@ -38,12 +38,36 @@ const projects = [
     },
 
     {
-        title: 'Dashboard Pembukuan',
-        category: 'Webite Application',
-        tags: ['ERP', 'Finance', 'Dashboard'],
-        description: 'Aplikasi dashboard untuk mencatat dan memantau keuangan pribadi atau bisnis kecil',
-        image: 'https://picsum.photos/600/400?random=23',
-        external: 'https://dahboard-pembukuan.vercel.app/'
+        title: 'NexaPOS — Retail Point of Sale',
+        category: 'Website Application',
+        tags: ['POS', 'Retail', 'Cashier', 'Inventory'],
+        description: 'Sistem Point of Sale retail modern berbasis web dengan konsep Kertas & Tinta untuk memantau omzet, kasir, dan transaksi harian.',
+        image: '/projects/nexapos.png',
+        external: 'https://pos-sable-chi.vercel.app/dashboard'
+    },
+    {
+        title: 'StockFlow — Inventory & Order Management',
+        category: 'Website Application',
+        tags: ['Inventory', 'Warehouse', 'PostgreSQL', 'Ledger'],
+        description: 'Sistem inventaris dan pesanan berbasis buku besar gudang dengan validasi stok atomik dan audit trail mutasi barang.',
+        image: '/projects/stockflow.png',
+        external: 'https://stock-invoentory-and-management.vercel.app/'
+    },
+    {
+        title: 'Nusantara Store — SaaS Analytics Dashboard',
+        category: 'Website Application',
+        tags: ['SaaS', 'Analytics', 'E-Commerce', 'Dashboard'],
+        description: 'Executive SaaS analytics dashboard untuk toko e-commerce. Memantau tren pendapatan harian, pesanan, metrik ATV, dan retensi pelanggan.',
+        image: '/projects/nusantara-store.png',
+        external: 'https://saas-dasboard.vercel.app/dashboard'
+    },
+    {
+        title: 'Sistem Operasional Servis AC',
+        category: 'Website Application',
+        tags: ['Operations', 'Dispatch', 'Field Service', 'Work Order'],
+        description: 'Aplikasi internal untuk manajemen operasional servis & maintenance AC: antrean review, dispatch pekerjaan, dan penjadwalan teknisi.',
+        image: '/projects/operasional-ac.png',
+        external: 'https://jasa-ac-sukp.vercel.app/'
     },
 
     {
@@ -168,7 +192,7 @@ export default function Portfolio() {
     const filtered =
         selectedCategory === categories[0]
             ? projects
-            : projects.filter(p => p.category === selectedCategory || (selectedCategory === 'Website Application' && p.category === 'Webite Application'))
+            : projects.filter(p => p.category === selectedCategory)
 
     return (
         <div className="min-h-screen bg-white">
